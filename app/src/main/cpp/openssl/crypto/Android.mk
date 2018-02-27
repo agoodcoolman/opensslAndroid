@@ -81,3 +81,6 @@ LOCAL_SRC_FILES := armcap.c arm_arch.h constant_time_locl.h constant_time_test.c
                    x509v3/v3_lib.c x509v3/v3_ncons.c x509v3/v3_ocsp.c x509v3/v3_pci.c x509v3/v3_pcia.c x509v3/v3_pcons.c x509v3/v3_pku.c x509v3/v3_pmaps.c x509v3/v3_prn.c x509v3/v3_purp.c x509v3/v3_scts.c \
                    x509v3/v3_skey.c x509v3/v3_sxnet.c x509v3/v3_utl.c x509v3/x509v3.h
 
+
+
+include ($BUILD_SHARED_LIBRARY)
