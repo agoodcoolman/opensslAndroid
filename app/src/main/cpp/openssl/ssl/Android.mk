@@ -45,6 +45,5 @@ LOCAL_C_INCLUDES += $(local_c_includes)
 LOCAL_SHARED_LIBRARIES := libssl libcrypto
 LOCAL_MODULE:= ssltest
 LOCAL_MODULE_TAGS := optional
-include $(BUILD_EXECUTABLE)
 
-include(BUILD_SHARED_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
