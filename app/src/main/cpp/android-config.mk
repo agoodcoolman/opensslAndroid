@@ -15,4 +15,4 @@ LOCAL_CFLAGS += -DOPENSSL_NO_HW -DOPENSSL_NO_ENGINE -DZLIB
 # LOCAL_CFLAGS += -DCIPHER_DEBUG
 
 # 指令
-#ndk-build NDK_PROJECT_PATH=./app/src/main/cpp/ NDK_PATH=./app/src/main/cpp  APP_BUILD_SCRIPT=./app/src/main/cpp/Android.mk NDK_APPLICATION_MK=./app/src/main/cpp/Application.mk
+#ndk-build NDK_PROJECT_PATH=./../ NDK_PATH=./app/src/main/cpp  APP_BUILD_SCRIPT=./app/src/main/cpp/Android.mk NDK_APPLICATION_MK=./app/src/main/cpp/Application.mk

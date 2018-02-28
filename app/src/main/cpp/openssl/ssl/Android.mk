@@ -11,11 +11,11 @@ LOCAL_SRC_FILES := bad_dtls_test.c bio_ssl.c clienthellotest.c d1_both.c d1_clnt
                    tls1.h tls_srp.c
 
 local_c_include := \
-                    $(NDK_PROJECT_PATH) \
-                    $(NDK_PROJECT_PATH)/openssl/openssl \
-                    $(NDK_PROJECT_PATH)/openssl/internal \
-                    $(NDK_PROJECT_PATH)/openssl/crypto/asn1 \
-                    $(NDK_PROJECT_PATH)/openssl/crypto/evp \
+                    $(NDK_PATH) \
+                    $(NDK_PATH)/openssl/openssl \
+                    $(NDK_PATH)/openssl/internal \
+                    $(NDK_PATH)/openssl/crypto/asn1 \
+                    $(NDK_PATH)/openssl/crypto/evp \
 
 include $(CLEAR_VARS)
 include $(NDK_PATH)/android-config.mk
