@@ -10,4 +10,41 @@ LOCAL_SRC_FILES := bad_dtls_test.c bio_ssl.c clienthellotest.c d1_both.c d1_clnt
                    ssl_task.c ssl_txt.c ssl_utst.c t1_clnt.c t1_enc.c t1_ext.c t1_lib.c t1_meth.c t1_reneg.c t1_srvr.c t1_trce.c \
                    tls1.h tls_srp.c
 
+local_c_include := \
+                    $(NDK_PROJECT_PATH) \
+                    $(NDK_PROJECT_PATH)/openssl/openssl \
+                    $(NDK_PROJECT_PATH)/openssl/internal \
+                    $(NDK_PROJECT_PATH)/openssl/crypto/asn1 \
+                    $(NDK_PROJECT_PATH)/openssl/crypto/evp \
+
+include $(CLEAR_VARS)
+include $(NDK_PATH)/android-config.mk
+LOCAL_SRC_FILES += $(local_src_files)
+LOCAL_C_INCLUDES += $(local_c_includes)
+LOCAL_SHARED_LIBRARIES += libcrypto
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE:= libssl
+include $(BUILD_SHARED_LIBRARY)
+
+ifeq ($(WITH_HOST_DALVIK),true)
+    include $(CLEAR_VARS)
+    include $(NDK_PATH)/android-config.mk
+    LOCAL_SRC_FILES += $(local_src_files)
+    LOCAL_C_INCLUDES += $(local_c_includes)
+    LOCAL_SHARED_LIBRARIES += libcrypto
+    LOCAL_MODULE_TAGS := optional
+    LOCAL_MODULE:= libssl
+    include $(BUILD_SHARED_LIBRARY)
+endif
+
+# ssltest
+include $(CLEAR_VARS)
+include $(NDK_PATH)/android-config.mk
+LOCAL_SRC_FILES:= ssltest.c
+LOCAL_C_INCLUDES += $(local_c_includes)
+LOCAL_SHARED_LIBRARIES := libssl libcrypto
+LOCAL_MODULE:= ssltest
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_EXECUTABLE)
+
 include(BUILD_SHARED_LIBRARY)

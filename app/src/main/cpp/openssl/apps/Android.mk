@@ -10,9 +10,15 @@ LOCAL_SRC_FILES := apps.c apps.h app_rand.c asn1pars.c ca.c ciphers.c cms.c crl.
                    s_apps.h s_cb.c s_client.c s_server.c s_socket.c s_time.c testdsa.h testrsa.h timeouts.h ts.c verify.c \
                    version.c vms_decc_init.c vms_term_sock.c vms_term_sock.h winrand.c x509.c
 
+LOCAL_SHARED_LIBRARY := libssl \
+                        libcrypto
+
 LOCAL_C_INCLUDES := $(NDK_PROJECT_PATH) \
                     $(NDK_PROJECT_PATH)/openssl/internal \
                     $(NDK_PROJECT_PATH)/openssl/openssl
 
+LOCAL_CFLAGS := -DMONOLITH
+LOCAL_CFLAGS += -DOPENSSL_NO_DTLS1
+include $(NDK_PROJECT_PATH)/android-config.mk
 
 include $(BUILD_SHARED_LIBRARY)
