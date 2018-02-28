@@ -17,8 +17,8 @@
 # endif
 # include <stdarg.h>
 
-# include <openssl/crypto.h>
-# include <openssl/bioerr.h>
+# include "./crypto.h"
+# include "./bioerr.h"
 
 # ifndef OPENSSL_NO_SCTP
 #  include <openssl/e_os2.h>

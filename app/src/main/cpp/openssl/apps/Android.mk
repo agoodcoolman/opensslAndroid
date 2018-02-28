@@ -13,9 +13,9 @@ LOCAL_SRC_FILES := app_rand.c apps.c asn1pars.c ca.c ciphers.c cms.c crl.c crl2p
 LOCAL_SHARED_LIBRARY := libssl \
                         libcrypto
 
-LOCAL_C_INCLUDES := $(NDK_PROJECT_PATH) \
-                    $(NDK_PROJECT_PATH)/openssl/internal \
-                    $(NDK_PROJECT_PATH)/openssl/openssl
+LOCAL_C_INCLUDES := $(NDK_PATH)/ \
+                    $(NDK_PATH)/openssl/internal \
+                    $(NDK_PATH)/openssl/openssl
 
 LOCAL_CFLAGS := -DMONOLITH
 LOCAL_CFLAGS += -DOPENSSL_NO_DTLS1

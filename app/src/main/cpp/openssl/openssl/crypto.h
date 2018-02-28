@@ -20,11 +20,11 @@
 #  include <stdio.h>
 # endif
 
-# include <openssl/safestack.h>
-# include <openssl/opensslv.h>
-# include <openssl/ossl_typ.h>
-# include <openssl/opensslconf.h>
-# include <openssl/cryptoerr.h>
+# include "./safestack.h"
+# include "./opensslv.h"
+# include "./ossl_typ.h"
+# include "./opensslconf.h"
+# include "./cryptoerr.h"
 
 # ifdef CHARSET_EBCDIC
 #  include <openssl/ebcdic.h>
