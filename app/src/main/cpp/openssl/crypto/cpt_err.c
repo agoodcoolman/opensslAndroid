@@ -60,8 +60,8 @@
  */
 
 #include <stdio.h>
-#include <openssl/err.h>
-#include <openssl/crypto.h>
+#include <openssl/openssl/err.h>
+#include <openssl/openssl/crypto.h>
 
 /* BEGIN ERROR CODES */
 #ifndef OPENSSL_NO_ERR

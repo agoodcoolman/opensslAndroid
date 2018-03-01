@@ -1,24 +1,73 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := openssl
 
-LOCAL_SRC_FILES := app_rand.c apps.c asn1pars.c ca.c ciphers.c cms.c crl.c crl2p7.c dgst.c dh.c dhparam.c \
-                   dsa.c dsaparam.c ec.c ecparam.c enc.c engine.c errstr.c gendh.c gendsa.c genpkey.c genrsa.c \
-                   nseq.c ocsp.c openssl.c passwd.c pkcs12.c pkcs7.c pkcs8.c pkey.c pkeyparam.c pkeyutl.c prime.c \
-                   rand.c req.c rsa.c rsautl.c s_cb.c s_client.c s_server.c s_socket.c s_time.c sess_id.c smime.c \
-                   speed.c spkac.c srp.c ts.c verify.c version.c vms_decc_init.c vms_term_sock.c x509.c
+
+LOCAL_SRC_FILES := openssl/apps/apps.c\
+                   openssl/apps/app_rand.c\
+                   openssl/apps/asn1pars.c\
+                   openssl/apps/ca.c\
+                   openssl/apps/ciphers.c\
+                   openssl/apps/cms.c\
+                   openssl/apps/crl.c\
+                   openssl/apps/crl2p7.c\
+                   openssl/apps/dgst.c\
+                   openssl/apps/dh.c\
+                   openssl/apps/dhparam.c\
+                   openssl/apps/dsa.c\
+                   openssl/apps/dsaparam.c\
+                   openssl/apps/ec.c\
+                   openssl/apps/ecparam.c\
+                   openssl/apps/enc.c\
+                   openssl/apps/engine.c\
+                   openssl/apps/errstr.c\
+                   openssl/apps/gendh.c\
+                   openssl/apps/gendsa.c\
+                   openssl/apps/genpkey.c\
+                   openssl/apps/genrsa.c\
+                   openssl/apps/nseq.c\
+                   openssl/apps/ocsp.c\
+                   openssl/apps/openssl.c\
+                   openssl/apps/passwd.c\
+                   openssl/apps/pkcs12.c\
+                   openssl/apps/pkcs7.c\
+                   openssl/apps/pkcs8.c\
+                   openssl/apps/pkey.c\
+                   openssl/apps/pkeyparam.c\
+                   openssl/apps/pkeyutl.c\
+                   openssl/apps/prime.c\
+                   openssl/apps/rand.c\
+                   openssl/apps/req.c\
+                   openssl/apps/rsa.c\
+                   openssl/apps/rsautl.c\
+                   openssl/apps/sess_id.c\
+                   openssl/apps/smime.c\
+                   openssl/apps/speed.c\
+                   openssl/apps/spkac.c\
+                   openssl/apps/srp.c\
+                   openssl/apps/s_cb.c\
+                   openssl/apps/s_client.c\
+                   openssl/apps/s_server.c\
+                   openssl/apps/s_socket.c\
+                   openssl/apps/s_time.c\
+                   openssl/apps/ts.c\
+                   openssl/apps/verify.c\
+                   openssl/apps/version.c\
+                   openssl/apps/vms_decc_init.c\
+                   openssl/apps/vms_term_sock.c\
+                   openssl/apps/x509.c\
 
 
 LOCAL_SHARED_LIBRARY := libssl \
                         libcrypto
 
-LOCAL_C_INCLUDES := $(NDK_PATH)/ \
+LOCAL_C_INCLUDES := $(NDK_PATH) \
+                    $(NDK_PATH)/openssl/crypto/rand \
                     $(NDK_PATH)/openssl/internal \
                     $(NDK_PATH)/openssl/openssl
 
 LOCAL_CFLAGS := -DMONOLITH
-LOCAL_CFLAGS += -DOPENSSL_NO_DTLS1
+LOCAL_CFLAGS += -DOPENSSL_NO_DTLS1 -DLPDIR_H
 include $(NDK_PATH)/android-config.mk
-
+LOCAL_MODULE := openssl
 include $(BUILD_SHARED_LIBRARY)

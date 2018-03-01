@@ -25,7 +25,10 @@
  */
 
 #ifndef LPDIR_H
-# include "LPdir.h"
+
+# include <LPdir.h>
+#include <errno.h>
+
 #endif
 
 struct LP_dir_context_st {

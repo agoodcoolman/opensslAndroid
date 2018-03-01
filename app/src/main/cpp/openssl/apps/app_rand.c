@@ -115,7 +115,7 @@
 
 #undef NON_MAIN
 
-#include "../../openssl/crypto/rand/rand.h"
+#include "../../openssl/openssl/rand.h"
 #include "../e_os.h"
 
 static int seeded = 0;

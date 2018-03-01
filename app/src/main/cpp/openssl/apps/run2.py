@@ -5,18 +5,12 @@ L = ''
 index = 0
 def file_name(file_dir):
     global L;
-    global index;
+
     for root, dirs, files in os.walk(file_dir):
         for file in files:
             if (os.path.splitext(file)[1] == '.c'):
                 #print os.path.join(root, file)
-                if (index > 10):
-                    index = 0;
-                    L += '==\r\n'
-                L += os.path.join(root, file) + ' '
-                index = index + 1
-
-
+                L += 'openssl/apps/' + os.path.join(root, file) + '==\r\n'
     return L
 
 

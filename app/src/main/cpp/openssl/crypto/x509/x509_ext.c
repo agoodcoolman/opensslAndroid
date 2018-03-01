@@ -62,8 +62,8 @@
 #include <openssl/asn1.h>
 #include <openssl/objects.h>
 #include <openssl/evp.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
+#include "openssl/x509.h"
+#include "openssl/x509v3.h"
 
 int X509_CRL_get_ext_count(X509_CRL *x)
 {
