@@ -11,7 +11,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             ndkBuild {
-                arguments "NDK_PATH=" + System.getProperty('user.dir') + "\\app\\src\\main\\cpp"
+                arguments "NDK_PATH=" + System.getProperty('user.dir') + "/app/src/main/cpp"
                 arguments "NDK_PROJECT_PATH="+ System.getProperty('user.dir')
             }
 

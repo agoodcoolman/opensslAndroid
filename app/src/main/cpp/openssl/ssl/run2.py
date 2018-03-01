@@ -10,7 +10,7 @@ def file_name(file_dir):
         for file in files:
             if (os.path.splitext(file)[1] == '.c'):
                 #print os.path.join(root, file)
-                L += 'openssl/ssl/' + os.path.join(root, file) + '==\r\n'
+                L += os.path.join(root, file) + ' ==\r\n'
     return L
 
 def file_name2(file_dir):

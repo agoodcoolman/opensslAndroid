@@ -37,7 +37,8 @@
 
 /*
  * The POSIXly macro for the maximum number of characters in a file path is
- * NAME_MAX.  However, some operating systems use PATH_MAX instead.
+ * NAME_MAX.
+ *
  * Therefore, it seems natural to first check for PATH_MAX and use that, and
  * if it doesn't exist, use NAME_MAX.
  */
