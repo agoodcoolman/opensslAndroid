@@ -67,7 +67,7 @@
 #ifdef FLAT_INC
 # include "e_os2.h"
 #else
-# include "../e_os2.h"
+# include "../openssl/e_os2.h"
 #endif
 
 /*
@@ -87,7 +87,7 @@ typedef unsigned int u_int;
 #undef USE_SOCKETS
 #undef NON_MAIN
 #include "s_apps.h"
-#include <openssl/ssl.h>
+#include <../openssl/ssl.h>
 
 #ifdef FLAT_INC
 # include "e_os.h"

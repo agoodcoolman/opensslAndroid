@@ -56,20 +56,20 @@
  * [including the GNU Public Licence.]
  */
 
-#include <openssl/opensslconf.h>
+#include <../openssl/opensslconf.h>
 #ifndef OPENSSL_NO_RSA
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <time.h>
 # include "apps.h"
-# include <openssl/bio.h>
-# include <openssl/err.h>
-# include <openssl/rsa.h>
-# include <openssl/evp.h>
-# include <openssl/x509.h>
-# include <openssl/pem.h>
-# include <openssl/bn.h>
+# include <../openssl/bio.h>
+# include <../openssl/err.h>
+# include <../openssl/rsa.h>
+# include <../openssl/evp.h>
+# include <../openssl/x509.h>
+# include <../openssl/pem.h>
+# include <../openssl/bn.h>
 
 # undef PROG
 # define PROG    rsa_main

@@ -69,7 +69,7 @@
  *
  */
 
-#include <openssl/opensslconf.h>
+#include <../openssl/opensslconf.h>
 #ifndef OPENSSL_NO_EC
 # include <assert.h>
 # include <stdio.h>
@@ -77,12 +77,12 @@
 # include <time.h>
 # include <string.h>
 # include "apps.h"
-# include <openssl/bio.h>
-# include <openssl/err.h>
-# include <openssl/bn.h>
-# include <openssl/ec.h>
-# include <openssl/x509.h>
-# include <openssl/pem.h>
+# include <../openssl/bio.h>
+# include <../openssl/err.h>
+# include <../openssl/bn.h>
+# include <../openssl/ec.h>
+# include <../openssl/x509.h>
+# include <../openssl/pem.h>
 
 # undef PROG
 # define PROG    ecparam_main

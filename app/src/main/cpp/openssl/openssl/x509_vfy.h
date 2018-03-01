@@ -67,13 +67,13 @@
 #ifndef HEADER_X509_VFY_H
 # define HEADER_X509_VFY_H
 
-# include <openssl/opensslconf.h>
+# include <opensslconf.h>
 # ifndef OPENSSL_NO_LHASH
-#  include <openssl/lhash.h>
+#  include <lhash.h>
 # endif
-# include <openssl/bio.h>
-# include <openssl/crypto.h>
-# include <openssl/symhacks.h>
+# include <bio.h>
+# include <crypto.h>
+# include <symhacks.h>
 
 #ifdef  __cplusplus
 extern "C" {

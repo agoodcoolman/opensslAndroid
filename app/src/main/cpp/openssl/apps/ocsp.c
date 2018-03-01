@@ -71,13 +71,13 @@
 # include <time.h>
 # include "apps.h"              /* needs to be included before the openssl
                                  * headers! */
-# include <openssl/e_os2.h>
-# include <openssl/crypto.h>
-# include <openssl/err.h>
-# include <openssl/ssl.h>
-# include <openssl/evp.h>
-# include <openssl/bn.h>
-# include <openssl/x509v3.h>
+# include <../openssl/e_os2.h>
+# include <../openssl/crypto.h>
+# include <../openssl/err.h>
+# include <../openssl/ssl.h>
+# include <../openssl/evp.h>
+# include <../openssl/bn.h>
+# include <../openssl/x509v3.h>
 
 # if defined(NETWARE_CLIB)
 #  ifdef NETWARE_BSDSOCK

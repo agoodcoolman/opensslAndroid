@@ -59,9 +59,9 @@
 #include <stdio.h>
 #include <string.h>
 #include "apps.h"
-#include <openssl/pem.h>
-#include <openssl/err.h>
-#include <openssl/evp.h>
+#include <../openssl/pem.h>
+#include <../openssl/err.h>
+#include <../openssl/evp.h>
 #ifndef OPENSSL_NO_ENGINE
 # include <openssl/engine.h>
 #endif

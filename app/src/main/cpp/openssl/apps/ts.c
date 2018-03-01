@@ -61,12 +61,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "apps.h"
-#include <openssl/bio.h>
-#include <openssl/err.h>
-#include <openssl/pem.h>
-#include <openssl/rand.h>
-#include <openssl/ts.h>
-#include <openssl/bn.h>
+#include <../openssl/bio.h>
+#include <../openssl/err.h>
+#include <../openssl/pem.h>
+#include <../openssl/rand.h>
+#include <../openssl/ts.h>
+#include <../openssl/bn.h>
 
 #undef PROG
 #define PROG    ts_main

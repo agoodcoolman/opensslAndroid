@@ -120,9 +120,9 @@
 # ifndef OPENSSL_NO_COMP
 #  include <openssl/comp.h>
 # endif
-# include <openssl/buffer.h>
-# include <openssl/evp.h>
-# include <openssl/ssl.h>
+# include <buffer.h>
+# include <evp.h>
+# include <ssl.h>
 
 #ifdef  __cplusplus
 extern "C" {

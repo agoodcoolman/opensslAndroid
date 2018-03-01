@@ -115,14 +115,14 @@
 #define OPENSSL_C               /* tells apps.h to use complete
                                  * apps_startup() */
 #include "apps.h"
-#include <openssl/bio.h>
-#include <openssl/crypto.h>
-#include <openssl/rand.h>
-#include <openssl/lhash.h>
-#include <openssl/conf.h>
-#include <openssl/x509.h>
-#include <openssl/pem.h>
-#include <openssl/ssl.h>
+#include <../openssl/bio.h>
+#include <../openssl/crypto.h>
+#include <../openssl/rand.h>
+#include <../openssl/lhash.h>
+#include <../openssl/conf.h>
+#include <../openssl/x509.h>
+#include <../openssl/pem.h>
+#include <../openssl/ssl.h>
 #ifndef OPENSSL_NO_ENGINE
 # include <openssl/engine.h>
 #endif
@@ -130,7 +130,7 @@
                                  * world */
 #include "progs.h"
 #include "s_apps.h"
-#include <openssl/err.h>
+#include <../openssl/err.h>
 #ifdef OPENSSL_FIPS
 # include <openssl/fips.h>
 #endif

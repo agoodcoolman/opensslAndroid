@@ -38,12 +38,12 @@ ifeq ($(WITH_HOST_DALVIK),true)
 endif
 
 # ssltest
-include $(CLEAR_VARS)
-include $(NDK_PATH)/android-config.mk
-LOCAL_SRC_FILES:= ssltest.c
-LOCAL_C_INCLUDES += $(local_c_includes)
-LOCAL_SHARED_LIBRARIES := libssl libcrypto
-LOCAL_MODULE:= ssltest
-LOCAL_MODULE_TAGS := optional
+#include $(CLEAR_VARS)
+#include $(NDK_PATH)/android-config.mk
+#LOCAL_SRC_FILES:= ssltest.c
+#LOCAL_C_INCLUDES += $(local_c_includes)
+#LOCAL_SHARED_LIBRARIES := libssl libcrypto
+#LOCAL_MODULE:= ssltest
+#LOCAL_MODULE_TAGS := optional
 
-include $(BUILD_SHARED_LIBRARY)
+#include $(BUILD_SHARED_LIBRARY)

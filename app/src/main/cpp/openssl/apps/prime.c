@@ -50,7 +50,7 @@
 #include <string.h>
 
 #include "apps.h"
-#include <openssl/bn.h>
+#include <../openssl/bn.h>
 
 #undef PROG
 #define PROG prime_main

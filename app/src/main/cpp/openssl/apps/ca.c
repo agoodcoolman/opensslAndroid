@@ -63,17 +63,17 @@
 #include <string.h>
 #include <ctype.h>
 #include <sys/types.h>
-#include <openssl/conf.h>
-#include <openssl/bio.h>
-#include <openssl/err.h>
-#include <openssl/bn.h>
-#include <openssl/txt_db.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
-#include <openssl/objects.h>
-#include <openssl/ocsp.h>
-#include <openssl/pem.h>
+#include <../openssl/conf.h>
+#include <../openssl/bio.h>
+#include <../openssl/err.h>
+#include <../openssl/bn.h>
+#include <../openssl/txt_db.h>
+#include <../openssl/evp.h>
+#include <../openssl/x509.h>
+#include <../openssl/x509v3.h>
+#include <../openssl/objects.h>
+#include <../openssl/ocsp.h>
+#include <../openssl/pem.h>
 
 #ifndef W_OK
 # ifdef OPENSSL_SYS_VMS

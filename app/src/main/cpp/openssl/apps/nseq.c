@@ -60,8 +60,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "apps.h"
-#include <openssl/pem.h>
-#include <openssl/err.h>
+#include <../openssl/pem.h>
+#include <../openssl/err.h>
 
 #undef PROG
 #define PROG nseq_main

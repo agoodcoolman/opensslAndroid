@@ -58,9 +58,9 @@
 
 #include "apps.h"
 #include <string.h>
-#include <openssl/err.h>
-#include <openssl/pem.h>
-#include <openssl/evp.h>
+#include <../openssl/err.h>
+#include <../openssl/pem.h>
+#include <../openssl/evp.h>
 
 #define KEY_PRIVKEY     1
 #define KEY_PUBKEY      2

@@ -117,10 +117,10 @@
 #include "apps.h"
 #undef NON_MAIN
 #undef USE_SOCKETS
-#include <openssl/err.h>
-#include <openssl/rand.h>
-#include <openssl/x509.h>
-#include <openssl/ssl.h>
+#include <../openssl/err.h>
+#include <../openssl/rand.h>
+#include <../openssl/x509.h>
+#include <../openssl/ssl.h>
 #include "s_apps.h"
 
 #define COOKIE_SECRET_LENGTH    16

@@ -64,7 +64,7 @@
 # define APPS_WIN16
 #endif
 #include "apps.h"
-#include <openssl/err.h>
+#include <../openssl/err.h>
 #ifndef OPENSSL_NO_ENGINE
 # include <openssl/engine.h>
 # include <openssl/ssl.h>

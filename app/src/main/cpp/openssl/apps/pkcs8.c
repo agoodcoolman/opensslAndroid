@@ -59,10 +59,10 @@
 #include <stdio.h>
 #include <string.h>
 #include "apps.h"
-#include <openssl/pem.h>
-#include <openssl/err.h>
-#include <openssl/evp.h>
-#include <openssl/pkcs12.h>
+#include <../openssl/pem.h>
+#include <../openssl/err.h>
+#include <../openssl/evp.h>
+#include <../openssl/pkcs12.h>
 
 #define PROG pkcs8_main
 

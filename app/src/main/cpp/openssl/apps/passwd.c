@@ -11,15 +11,15 @@
 
 # include "apps.h"
 
-# include <openssl/bio.h>
-# include <openssl/err.h>
-# include <openssl/evp.h>
-# include <openssl/rand.h>
+# include <../openssl/bio.h>
+# include <../openssl/err.h>
+# include <../openssl/evp.h>
+# include <../openssl/rand.h>
 # ifndef OPENSSL_NO_DES
-#  include <openssl/des.h>
+#  include <../openssl/des.h>
 # endif
 # ifndef NO_MD5CRYPT_1
-#  include <openssl/md5.h>
+#  include <../openssl/md5.h>
 # endif
 
 # undef PROG
