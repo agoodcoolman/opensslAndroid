@@ -116,7 +116,7 @@
 #undef NON_MAIN
 
 #include "../../openssl/openssl/rand.h"
-#include "../e_os.h"
+#include "../openssl/e_os.h"
 
 static int seeded = 0;
 static int egdsocket = 0;

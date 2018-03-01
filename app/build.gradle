@@ -13,6 +13,7 @@ android {
             ndkBuild {
                 arguments "NDK_PATH=" + System.getProperty('user.dir') + "/app/src/main/cpp"
                 arguments "NDK_PROJECT_PATH="+ System.getProperty('user.dir')
+//                arguments "-non-thumb"
             }
 
         }

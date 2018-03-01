@@ -62,10 +62,8 @@ LOCAL_SRC_FILES := cms.c\
 LOCAL_SHARED_LIBRARY := libssl \
                         libcrypto
 
-LOCAL_C_INCLUDES := $(NDK_PATH) \
-                    $(NDK_PATH)/openssl/crypto/rand \
-                    $(NDK_PATH)/openssl/app \
-                    $(NDK_PATH)/openssl/internal \
+LOCAL_C_INCLUDES += $(NDK_PATH) \
+                    $(NDK_PATH)/openssl/apps \
                     $(NDK_PATH)/openssl/openssl
 
 LOCAL_CFLAGS := -DMONOLITH

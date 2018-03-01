@@ -113,10 +113,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include "cryptlib.h"
-#include <openssl/crypto.h>
-#include <openssl/buffer.h>
-#include <openssl/bio.h>
-#include <openssl/lhash.h>
+#include "../openssl/crypto.h"
+#include "../openssl/buffer.h"
+#include "../openssl/bio.h"
+#include "../openssl/lhash.h"
 
 static int mh_mode = CRYPTO_MEM_CHECK_OFF;
 /*

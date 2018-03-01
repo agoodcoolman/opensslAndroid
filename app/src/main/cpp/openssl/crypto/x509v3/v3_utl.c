@@ -61,9 +61,10 @@
 #include <stdio.h>
 #include <ctype.h>
 #include "cryptlib.h"
-#include <openssl/conf.h>
-#include <openssl/x509v3.h>
-#include <openssl/bn.h>
+#include "../openssl/conf.h"
+#include "../openssl/x509v3.h"
+#include "../openssl/bn.h"
+#include "../../openssl/x509v3.h"
 
 static char *strip_spaces(char *name);
 static int sk_strcmp(const char *const *a, const char *const *b);

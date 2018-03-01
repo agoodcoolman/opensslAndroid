@@ -15,10 +15,7 @@ local_src_files := constant_time_test.c  \
                    o_time.c  \
                    ppccap.c  \
                    s390xcap.c  \
-                   sparcv9cap.c  \
                    uid.c  \
-                   LPdir_unix.c  \
-                   LPdir_nyi.c  \
                    armcap.c  \
                    cpt_err.c  \
                    cryptlib.c  \
