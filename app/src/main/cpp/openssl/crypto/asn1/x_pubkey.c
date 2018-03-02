@@ -58,8 +58,8 @@
 
 #include <stdio.h>
 #include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
+#include "../../openssl/asn1t.h"
+#include "../../openssl/x509.h"
 #include "asn1_locl.h"
 #ifndef OPENSSL_NO_RSA
 # include <openssl/rsa.h>

@@ -59,11 +59,11 @@
 
 #include <stddef.h>
 #include <string.h>
-#include <openssl/asn1.h>
-#include <openssl/asn1t.h>
-#include <openssl/objects.h>
-#include <openssl/buffer.h>
-#include <openssl/err.h>
+#include "../../openssl/asn1.h"
+#include "../../openssl/asn1t.h"
+#include "../../openssl/objects.h"
+#include "../../openssl/buffer.h"
+#include "../../openssl/err.h"
 
 static int asn1_check_eoc(const unsigned char **in, long len);
 static int asn1_find_end(const unsigned char **in, long len, char inf);

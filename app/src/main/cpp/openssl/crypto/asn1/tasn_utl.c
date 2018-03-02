@@ -59,10 +59,10 @@
 
 #include <stddef.h>
 #include <string.h>
-#include <openssl/asn1.h>
-#include <openssl/asn1t.h>
-#include <openssl/objects.h>
-#include <openssl/err.h>
+#include "../../openssl/asn1.h"
+#include "../../openssl/asn1t.h"
+#include "../../openssl/objects.h"
+#include "../../openssl/err.h"
 
 /* Utility functions for manipulating fields and offsets */
 

@@ -56,10 +56,10 @@
 #include <stdio.h>
 #include <ctype.h>
 #include "cryptlib.h"
-#include <openssl/rand.h>
-#include <openssl/x509.h>
-#include <openssl/asn1.h>
-#include <openssl/asn1t.h>
+#include "../../openssl/rand.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/asn1.h"
+#include "../../openssl/asn1t.h"
 #include "asn1_locl.h"
 
 /*
