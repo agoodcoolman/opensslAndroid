@@ -65,10 +65,11 @@
 # include <sys/types.h>
 #endif
 
-#include <openssl/err.h>
-#include <openssl/evp.h>
-#include <openssl/buffer.h>
-#include <openssl/x509.h>
+#include "../openssl/err.h"
+#include "../openssl/evp.h"
+#include "../openssl/buffer.h"
+#include "../openssl/x509.h"
+#include "../../openssl/asn1.h"
 
 #ifndef NO_ASN1_OLD
 

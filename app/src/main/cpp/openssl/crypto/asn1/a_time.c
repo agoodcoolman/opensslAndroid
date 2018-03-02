@@ -65,8 +65,9 @@
 #include <time.h>
 #include "cryptlib.h"
 #include "o_time.h"
-#include <openssl/asn1t.h>
+#include "../../openssl/asn1t.h"
 #include "asn1_locl.h"
+#include "../../openssl/asn1.h"
 
 IMPLEMENT_ASN1_MSTRING(ASN1_TIME, B_ASN1_TIME)
 

@@ -67,11 +67,11 @@
 #ifndef HEADER_X509_VFY_H
 # define HEADER_X509_VFY_H
 
-# include <opensslconf.h>
+# include "opensslconf.h"
 # ifndef OPENSSL_NO_LHASH
-#  include <lhash.h>
+#  include "lhash.h"
 # endif
-# include <bio.h>
+# include "bio.h"
 # include <crypto.h>
 # include <symhacks.h>
 

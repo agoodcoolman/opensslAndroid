@@ -118,11 +118,11 @@
 # include <sys/types.h>
 #endif
 
-#include <openssl/bn.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
-#include <openssl/objects.h>
-#include <openssl/buffer.h>
+#include "../../openssl/bn.h"
+#include "../../openssl/evp.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/objects.h"
+#include "../../openssl/buffer.h"
 #include "asn1_locl.h"
 
 #ifndef NO_ASN1_OLD

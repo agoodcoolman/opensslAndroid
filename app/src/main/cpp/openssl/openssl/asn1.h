@@ -60,12 +60,12 @@
 # define HEADER_ASN1_H
 
 # include <time.h>
-# include <e_os2.h>
+# include "e_os2.h"
 # ifndef OPENSSL_NO_BIO
-#  include <bio.h>
+#  include "bio.h"
 # endif
-# include <stack.h>
-# include <safestack.h>
+# include "stack.h"
+# include "safestack.h"
 
 # include <symhacks.h>
 

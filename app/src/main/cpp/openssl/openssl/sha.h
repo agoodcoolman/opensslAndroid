@@ -59,8 +59,8 @@
 #ifndef HEADER_SHA_H
 # define HEADER_SHA_H
 
-# include <e_os2.h>
-# include <stddef.h>
+# include "e_os2.h"
+# include "stddef.h"
 
 #ifdef  __cplusplus
 extern "C" {

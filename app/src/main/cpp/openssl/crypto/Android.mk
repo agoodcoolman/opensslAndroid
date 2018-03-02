@@ -712,12 +712,11 @@ local_c_include :=  $(NDK_PATH)/openssl \
 
 local_c_flags := -DNO_WINDOWS_BRAINDEATH
 
-
 #target
 
 include $(NDK_PATH)/android-config.mk
 LOCAL_SRC_FILES += $(local_src_files)
-#LOCAL_CFLAGS += $(local_c_flags)
+LOCAL_CFLAGS += $(local_c_flags)
 LOCAL_C_INCLUDE += $(local_c_include)
 LOCAL_LDLIBS += -lz
 

@@ -76,13 +76,13 @@
 #ifndef HEADER_EC_H
 # define HEADER_EC_H
 
-# include <opensslconf.h>
+# include "opensslconf.h"
 
 # ifdef OPENSSL_NO_EC
 #  error EC is disabled.
 # endif
 
-# include <asn1.h>
+# include "asn1.h"
 # include <symhacks.h>
 # ifndef OPENSSL_NO_DEPRECATED
 #  include <bn.h>

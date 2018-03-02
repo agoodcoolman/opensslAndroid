@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/opensslAndroid.iml" filepath="$PROJECT_DIR$/opensslAndroid.iml" />
+      <module fileurl="file://C:\Users\jin\Desktop\ceshi\rtmp\opensslAndroid.iml" filepath="C:\Users\jin\Desktop\ceshi\rtmp\opensslAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rtmp.iml" filepath="$PROJECT_DIR$/rtmp.iml" />
     </modules>
   </component>
 </project>
