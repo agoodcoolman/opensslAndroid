@@ -61,7 +61,7 @@
 #include <errno.h>
 #define USE_SOCKETS
 #include "cryptlib.h"
-#include <openssl/bio.h>
+#include "../../openssl/bio.h"
 #if defined(OPENSSL_SYS_NETWARE) && defined(NETWARE_BSDSOCK)
 # include <netdb.h>
 # if defined(NETWARE_CLIB)

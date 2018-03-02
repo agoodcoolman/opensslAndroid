@@ -63,8 +63,8 @@
  * and contributed to the OpenSSL project.
  */
 
-#include <openssl/err.h>
-#include <openssl/symhacks.h>
+#include "../../openssl/err.h"
+#include "../../openssl/symhacks.h"
 
 #include "ec_lcl.h"
 

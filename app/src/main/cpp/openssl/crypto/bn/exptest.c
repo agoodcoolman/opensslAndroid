@@ -62,10 +62,10 @@
 
 #include "../e_os.h"
 
-#include <openssl/bio.h>
-#include <openssl/bn.h>
-#include <openssl/rand.h>
-#include <openssl/err.h>
+#include "../../openssl/bio.h"
+#include "../../openssl/bn.h"
+#include "../../openssl/rand.h"
+#include "../../openssl/err.h"
 
 #define NUM_BITS        (BN_BITS*2)
 

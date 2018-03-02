@@ -57,10 +57,10 @@
  */
 
 #include <stdio.h>
-#include <openssl/bn.h>
-#include <openssl/asn1.h>
-#include <openssl/dh.h>
-#include <openssl/pem.h>
+#include "../../openssl/bn.h"
+#include "../../openssl/asn1.h"
+#include "../../openssl/dh.h"
+#include "../../openssl/pem.h"
 
 unsigned char data[] = {
     0xDA, 0x58, 0x3C, 0x16, 0xD9, 0x85, 0x22, 0x89,

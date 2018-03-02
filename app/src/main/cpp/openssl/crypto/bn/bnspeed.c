@@ -68,8 +68,8 @@
 #include <stdlib.h>
 #include <signal.h>
 #include <string.h>
-#include <openssl/crypto.h>
-#include <openssl/err.h>
+#include "../../openssl/crypto.h"
+#include "../../openssl/err.h"
 
 #if !defined(OPENSSL_SYS_MSDOS) && (!defined(OPENSSL_SYS_VMS) || defined(__DECC)) && !defined(OPENSSL_SYS_MACOSX)
 # define TIMES
@@ -103,8 +103,8 @@
 # include <sys/param.h>
 #endif
 
-#include <openssl/bn.h>
-#include <openssl/x509.h>
+#include "../../openssl/bn.h"
+#include "../../openssl/x509.h"
 
 /* The following if from times(3) man page.  It may need to be changed */
 #ifndef HZ

@@ -72,11 +72,11 @@
 
 #include "../e_os.h"
 
-#include <openssl/crypto.h>
-#include <openssl/rand.h>
-#include <openssl/bio.h>
-#include <openssl/err.h>
-#include <openssl/bn.h>
+#include "../../openssl/crypto.h"
+#include "../../openssl/rand.h"
+#include "../../openssl/bio.h"
+#include "../../openssl/err.h"
+#include "../../openssl/bn.h"
 
 #ifdef OPENSSL_NO_DSA
 int main(int argc, char *argv[])

@@ -58,9 +58,9 @@
 
 #include <string.h>
 #include "ec_lcl.h"
-#include <openssl/err.h>
-#include <openssl/asn1t.h>
-#include <openssl/objects.h>
+#include "../../openssl/err.h"
+#include "../../openssl/asn1t.h"
+#include "../../openssl/objects.h"
 
 #define OSSL_NELEM(x)    (sizeof(x)/sizeof(x[0]))
 

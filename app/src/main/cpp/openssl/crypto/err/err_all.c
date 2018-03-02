@@ -57,13 +57,13 @@
  */
 
 #include <stdio.h>
-#include <openssl/asn1.h>
-#include <openssl/bn.h>
+#include "../../openssl/asn1.h"
+#include "../../openssl/bn.h"
 #ifndef OPENSSL_NO_EC
 # include <openssl/ec.h>
 #endif
-#include <openssl/buffer.h>
-#include <openssl/bio.h>
+#include "../../openssl/buffer.h"
+#include "../../openssl/bio.h"
 #ifndef OPENSSL_NO_COMP
 # include <openssl/comp.h>
 #endif
@@ -82,25 +82,25 @@
 #ifndef OPENSSL_NO_ECDH
 # include <openssl/ecdh.h>
 #endif
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/pem2.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
-#include <openssl/conf.h>
-#include <openssl/pkcs12.h>
-#include <openssl/rand.h>
-#include <openssl/dso.h>
+#include "../../openssl/evp.h"
+#include "../../openssl/objects.h"
+#include "../../openssl/pem2.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/x509v3.h"
+#include "../../openssl/conf.h"
+#include "../../openssl/pkcs12.h"
+#include "../../openssl/rand.h"
+#include "../../openssl/dso.h"
 #ifndef OPENSSL_NO_ENGINE
 # include <openssl/engine.h>
 #endif
-#include <openssl/ui.h>
-#include <openssl/ocsp.h>
-#include <openssl/err.h>
+#include "../../openssl/ui.h"
+#include "../../openssl/ocsp.h"
+#include "../../openssl/err.h"
 #ifdef OPENSSL_FIPS
 # include <openssl/fips.h>
 #endif
-#include <openssl/ts.h>
+#include "../../openssl/ts.h"
 #ifndef OPENSSL_NO_CMS
 # include <openssl/cms.h>
 #endif

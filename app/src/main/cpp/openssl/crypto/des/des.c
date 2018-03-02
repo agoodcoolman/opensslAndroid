@@ -59,7 +59,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <openssl/opensslconf.h>
+#include "../../openssl/opensslconf.h"
 #ifndef OPENSSL_SYS_MSDOS
 # ifndef OPENSSL_SYS_VMS
 #  include OPENSSL_UNISTD
@@ -86,9 +86,9 @@
 # endif
 # include <sys/stat.h>
 #endif
-#include <openssl/des.h>
-#include <openssl/rand.h>
-#include <openssl/ui_compat.h>
+#include "../../openssl/des.h"
+#include "../../openssl/rand.h"
+#include "../../openssl/ui_compat.h"
 
 void usage(void);
 void doencryption(void);

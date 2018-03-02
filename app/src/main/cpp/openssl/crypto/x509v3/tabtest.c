@@ -64,7 +64,7 @@
 
 #include <stdio.h>
 
-#include <openssl/x509v3.h>
+#include "../../openssl/x509v3.h"
 
 #include "ext_dat.h"
 

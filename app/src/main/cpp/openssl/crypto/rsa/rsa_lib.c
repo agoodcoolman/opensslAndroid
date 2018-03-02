@@ -57,12 +57,12 @@
  */
 
 #include <stdio.h>
-#include <openssl/crypto.h>
+#include "../../openssl/crypto.h"
 #include "cryptlib.h"
-#include <openssl/lhash.h>
-#include <openssl/bn.h>
-#include <openssl/rsa.h>
-#include <openssl/rand.h>
+#include "../../openssl/lhash.h"
+#include "../../openssl/bn.h"
+#include "../../openssl/rsa.h"
+#include "../../openssl/rand.h"
 #ifndef OPENSSL_NO_ENGINE
 # include <openssl/engine.h>
 #endif

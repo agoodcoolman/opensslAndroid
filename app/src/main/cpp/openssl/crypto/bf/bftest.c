@@ -64,7 +64,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <openssl/opensslconf.h> /* To see if OPENSSL_NO_BF is defined */
+#include "../../openssl/opensslconf.h" /* To see if OPENSSL_NO_BF is defined */
 
 #include "../e_os.h"
 

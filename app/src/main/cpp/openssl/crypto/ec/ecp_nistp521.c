@@ -26,7 +26,7 @@
  * work which got its smarts from Daniel J. Bernstein's work on the same.
  */
 
-#include <openssl/opensslconf.h>
+#include "../../openssl/opensslconf.h"
 #ifndef OPENSSL_NO_EC_NISTP_64_GCC_128
 
 # ifndef OPENSSL_SYS_VMS

@@ -58,13 +58,13 @@
  */
 
 #include <string.h>
-#include <openssl/bn.h>
-#include <openssl/err.h>
+#include "../../openssl/bn.h"
+#include "../../openssl/err.h"
 #ifndef OPENSSL_NO_ENGINE
 # include <openssl/engine.h>
 #endif
-#include <openssl/sha.h>
-#include <openssl/x509.h>
+#include "../../openssl/sha.h"
+#include "../../openssl/x509.h"
 #include "str_locl.h"
 
 const char *const STORE_object_type_string[STORE_OBJECT_TYPE_NUM + 1] = {

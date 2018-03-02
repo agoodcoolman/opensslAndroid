@@ -58,7 +58,7 @@
  */
 
 #include <string.h>
-#include <openssl/buffer.h>
+#include "../../openssl/buffer.h"
 #include "str_locl.h"
 
 STORE_METHOD *STORE_create_method(char *name)

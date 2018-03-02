@@ -59,12 +59,12 @@
 
 #include <stdio.h>
 #include <cryptlib.h>
-#include <openssl/objects.h>
-#include <openssl/rand.h>
-#include <openssl/x509.h>
-#include <openssl/pem.h>
-#include <openssl/x509v3.h>
-#include <openssl/ocsp.h>
+#include "../../openssl/objects.h"
+#include "../../openssl/rand.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/pem.h"
+#include "../../openssl/x509v3.h"
+#include "../../openssl/ocsp.h"
 
 /*
  * Utility functions related to sending OCSP responses and extracting

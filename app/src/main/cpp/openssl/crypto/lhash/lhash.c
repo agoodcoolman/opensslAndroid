@@ -98,8 +98,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <openssl/crypto.h>
-#include <openssl/lhash.h>
+#include "../../openssl/crypto.h"
+#include "../../openssl/lhash.h"
 
 /*
  * A hashing implementation that appears to be based on the linear hashing

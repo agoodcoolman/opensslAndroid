@@ -1,4 +1,4 @@
-#include <openssl/opensslconf.h>
+#include "../../openssl/opensslconf.h"
 
 #ifdef OPENSSL_NO_JPAKE
 

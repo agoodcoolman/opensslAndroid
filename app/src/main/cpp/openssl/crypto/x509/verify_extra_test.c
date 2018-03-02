@@ -56,11 +56,11 @@
  */
 
 #include <stdio.h>
-#include <openssl/crypto.h>
-#include <openssl/bio.h>
-#include <openssl/x509.h>
-#include <openssl/pem.h>
-#include <openssl/err.h>
+#include "../../openssl/crypto.h"
+#include "../../openssl/bio.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/pem.h"
+#include "../../openssl/err.h"
 
 static STACK_OF(X509) *load_certs_from_file(const char *filename)
 {

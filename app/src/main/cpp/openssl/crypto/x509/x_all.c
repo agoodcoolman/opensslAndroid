@@ -57,13 +57,13 @@
  */
 
 #include <stdio.h>
-#include <openssl/stack.h>
+#include "../../openssl/stack.h"
 #include "cryptlib.h"
-#include <openssl/buffer.h>
-#include <openssl/asn1.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
-#include <openssl/ocsp.h>
+#include "../../openssl/buffer.h"
+#include "../../openssl/asn1.h"
+#include "../../openssl/evp.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/ocsp.h"
 #ifndef OPENSSL_NO_RSA
 # include <openssl/rsa.h>
 #endif

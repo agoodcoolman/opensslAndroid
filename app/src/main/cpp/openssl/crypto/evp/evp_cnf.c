@@ -59,12 +59,12 @@
 
 #include <stdio.h>
 #include <ctype.h>
-#include <openssl/crypto.h>
+#include "../../openssl/crypto.h"
 #include "cryptlib.h"
-#include <openssl/conf.h>
-#include <openssl/dso.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
+#include "../../openssl/conf.h"
+#include "../../openssl/dso.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/x509v3.h"
 #ifdef OPENSSL_FIPS
 # include <openssl/fips.h>
 #endif

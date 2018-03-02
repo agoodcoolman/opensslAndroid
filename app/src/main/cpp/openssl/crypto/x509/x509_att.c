@@ -57,13 +57,13 @@
  */
 
 #include <stdio.h>
-#include <openssl/stack.h>
+#include "../../openssl/stack.h"
 #include "cryptlib.h"
-#include <openssl/asn1.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
+#include "../../openssl/asn1.h"
+#include "../../openssl/objects.h"
+#include "../../openssl/evp.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/x509v3.h"
 
 int X509at_get_attr_count(const STACK_OF(X509_ATTRIBUTE) *x)
 {

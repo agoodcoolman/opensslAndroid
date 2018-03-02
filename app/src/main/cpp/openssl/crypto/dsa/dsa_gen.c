@@ -73,7 +73,7 @@
 # define HASH    EVP_sha1()
 #endif
 
-#include <openssl/opensslconf.h> /* To see if OPENSSL_NO_SHA is defined */
+#include "../../openssl/opensslconf.h" /* To see if OPENSSL_NO_SHA is defined */
 
 #ifndef OPENSSL_NO_SHA
 

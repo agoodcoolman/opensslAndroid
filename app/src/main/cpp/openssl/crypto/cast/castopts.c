@@ -67,7 +67,7 @@
 
 #include <stdio.h>
 
-#include <openssl/e_os2.h>
+#include "../../openssl/e_os2.h"
 #include OPENSSL_UNISTD_IO
 OPENSSL_DECLARE_EXIT
 #ifndef OPENSSL_SYS_NETWARE
@@ -97,7 +97,7 @@ OPENSSL_DECLARE_EXIT
 # include <limits.h>
 # include <sys/param.h>
 #endif
-#include <openssl/cast.h>
+#include "../../openssl/cast.h"
 #define CAST_DEFAULT_OPTIONS
 #undef E_CAST
 #define CAST_encrypt  CAST_encrypt_normal

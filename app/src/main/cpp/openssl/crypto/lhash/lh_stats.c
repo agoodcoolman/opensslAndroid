@@ -68,7 +68,7 @@
 #ifndef OPENSSL_NO_BIO
 # include <openssl/bio.h>
 #endif
-#include <openssl/lhash.h>
+#include "../../openssl/lhash.h"
 
 #ifdef OPENSSL_NO_BIO
 

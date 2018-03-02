@@ -6,8 +6,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include <openssl/whrlpool.h>
-#include <openssl/crypto.h>
+#include "../../openssl/whrlpool.h"
+#include "../../openssl/crypto.h"
 
 #if defined(OPENSSL_NO_WHIRLPOOL)
 int main(int argc, char *argv[])

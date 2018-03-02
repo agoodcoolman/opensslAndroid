@@ -28,9 +28,9 @@
 
 #include <string.h>
 
-#include <openssl/bn.h>
-#include <openssl/err.h>
-#include <openssl/ec.h>
+#include "../../openssl/bn.h"
+#include "../../openssl/err.h"
+#include "../../openssl/ec.h"
 #include "cryptlib.h"
 
 #include "ec_lcl.h"

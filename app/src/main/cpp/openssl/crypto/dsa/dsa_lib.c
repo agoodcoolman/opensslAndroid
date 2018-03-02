@@ -60,9 +60,9 @@
 
 #include <stdio.h>
 #include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/dsa.h>
-#include <openssl/asn1.h>
+#include "../../openssl/bn.h"
+#include "../../openssl/dsa.h"
+#include "../../openssl/asn1.h"
 #ifndef OPENSSL_NO_ENGINE
 # include <openssl/engine.h>
 #endif

@@ -58,10 +58,10 @@
 
 #include <stdio.h>
 #include "cryptlib.h"
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
-#include <openssl/evp.h>
-#include <openssl/hmac.h>
+#include "../../openssl/x509.h"
+#include "../../openssl/x509v3.h"
+#include "../../openssl/evp.h"
+#include "../../openssl/hmac.h"
 #include "evp_locl.h"
 
 /* HMAC pkey context structure */

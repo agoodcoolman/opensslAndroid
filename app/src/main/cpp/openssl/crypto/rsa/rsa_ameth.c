@@ -59,10 +59,10 @@
 
 #include <stdio.h>
 #include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
-#include <openssl/rsa.h>
-#include <openssl/bn.h>
+#include "../../openssl/asn1t.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/rsa.h"
+#include "../../openssl/bn.h"
 #ifndef OPENSSL_NO_CMS
 # include <openssl/cms.h>
 #endif

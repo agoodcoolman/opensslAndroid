@@ -58,7 +58,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <openssl/rand.h>
+#include "../../openssl/rand.h"
 
 #include "../e_os.h"
 

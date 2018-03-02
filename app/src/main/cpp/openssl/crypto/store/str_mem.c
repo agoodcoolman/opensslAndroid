@@ -58,7 +58,7 @@
  */
 
 #include <string.h>
-#include <openssl/err.h>
+#include "../../openssl/err.h"
 #include "str_locl.h"
 
 /*

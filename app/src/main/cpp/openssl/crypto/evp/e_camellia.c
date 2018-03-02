@@ -53,7 +53,7 @@
  *
  */
 
-#include <openssl/opensslconf.h>
+#include "../../openssl/opensslconf.h"
 #ifndef OPENSSL_NO_CAMELLIA
 # include <openssl/evp.h>
 # include <openssl/err.h>

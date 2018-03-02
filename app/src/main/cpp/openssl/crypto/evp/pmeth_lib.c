@@ -60,8 +60,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "cryptlib.h"
-#include <openssl/objects.h>
-#include <openssl/evp.h>
+#include "../../openssl/objects.h"
+#include "../../openssl/evp.h"
 #ifndef OPENSSL_NO_ENGINE
 # include <openssl/engine.h>
 #endif

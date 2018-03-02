@@ -73,7 +73,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <openssl/opensslconf.h> /* To see if OPENSSL_NO_ECDSA is defined */
+#include "../../openssl/opensslconf.h" /* To see if OPENSSL_NO_ECDSA is defined */
 
 #ifdef OPENSSL_NO_ECDSA
 int main(int argc, char *argv[])

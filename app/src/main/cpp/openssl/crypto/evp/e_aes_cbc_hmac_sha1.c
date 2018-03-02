@@ -47,7 +47,7 @@
  * ====================================================================
  */
 
-#include <openssl/opensslconf.h>
+#include "../../openssl/opensslconf.h"
 
 #include <stdio.h>
 #include <string.h>

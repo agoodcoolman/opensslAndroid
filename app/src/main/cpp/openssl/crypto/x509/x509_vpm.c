@@ -60,11 +60,11 @@
 #include <stdio.h>
 
 #include "cryptlib.h"
-#include <openssl/crypto.h>
-#include <openssl/lhash.h>
-#include <openssl/buffer.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
+#include "../../openssl/crypto.h"
+#include "../../openssl/lhash.h"
+#include "../../openssl/buffer.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/x509v3.h"
 
 #include "vpm_int.h"
 

@@ -70,11 +70,11 @@
 
 #include "../e_os.h"
 
-#include <openssl/crypto.h>
-#include <openssl/bio.h>
-#include <openssl/bn.h>
-#include <openssl/rand.h>
-#include <openssl/err.h>
+#include "../../openssl/crypto.h"
+#include "../../openssl/bio.h"
+#include "../../openssl/bn.h"
+#include "../../openssl/rand.h"
+#include "../../openssl/err.h"
 
 #ifdef OPENSSL_NO_DH
 int main(int argc, char *argv[])

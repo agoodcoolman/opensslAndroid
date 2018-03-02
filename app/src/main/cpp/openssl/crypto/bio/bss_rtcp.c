@@ -67,7 +67,7 @@
 #include <string.h>
 #include <errno.h>
 #include "cryptlib.h"
-#include <openssl/bio.h>
+#include "../../openssl/bio.h"
 
 #include <iodef.h>              /* VMS IO$_ definitions */
 #include <starlet.h>

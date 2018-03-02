@@ -77,13 +77,13 @@
 #ifdef PTHREADS
 # include <pthread.h>
 #endif
-#include <openssl/lhash.h>
-#include <openssl/crypto.h>
-#include <openssl/buffer.h>
+#include "../../openssl/lhash.h"
+#include "../../openssl/crypto.h"
+#include "../../openssl/buffer.h"
 #include "../../e_os.h"
-#include <openssl/x509.h>
-#include <openssl/ssl.h>
-#include <openssl/err.h>
+#include "../../openssl/x509.h"
+#include "../../openssl/ssl.h"
+#include "../../openssl/err.h"
 
 void CRYPTO_thread_setup(void);
 void CRYPTO_thread_cleanup(void);

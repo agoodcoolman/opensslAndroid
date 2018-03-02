@@ -65,8 +65,8 @@
 #include <stdio.h>
 #include <time.h>
 #include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/rsa.h>
+#include "../../openssl/bn.h"
+#include "../../openssl/rsa.h"
 #ifdef OPENSSL_FIPS
 # include <openssl/fips.h>
 extern int FIPS_rsa_x931_generate_key_ex(RSA *rsa, int bits, BIGNUM *e,

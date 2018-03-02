@@ -82,13 +82,13 @@
 # endif
 # include <nwmpk.h>
 #endif
-#include <openssl/lhash.h>
-#include <openssl/crypto.h>
-#include <openssl/buffer.h>
-#include <openssl/x509.h>
-#include <openssl/ssl.h>
-#include <openssl/err.h>
-#include <openssl/rand.h>
+#include "../../openssl/lhash.h"
+#include "../../openssl/crypto.h"
+#include "../../openssl/buffer.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/ssl.h"
+#include "../../openssl/err.h"
+#include "../../openssl/rand.h"
 
 #ifdef OPENSSL_SYS_NETWARE
 # define TEST_SERVER_CERT "/openssl/apps/server.pem"

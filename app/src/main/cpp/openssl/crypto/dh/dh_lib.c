@@ -58,8 +58,8 @@
 
 #include <stdio.h>
 #include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/dh.h>
+#include "../../openssl/bn.h"
+#include "../../openssl/dh.h"
 #ifndef OPENSSL_NO_ENGINE
 # include <openssl/engine.h>
 #endif

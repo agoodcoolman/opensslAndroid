@@ -62,9 +62,9 @@
  */
 
 #include "cryptlib.h"
-#include <openssl/pem.h>
-#include <openssl/rand.h>
-#include <openssl/bn.h>
+#include "../../openssl/pem.h"
+#include "../../openssl/rand.h"
+#include "../../openssl/bn.h"
 #if !defined(OPENSSL_NO_RSA) && !defined(OPENSSL_NO_DSA)
 # include <openssl/dsa.h>
 # include <openssl/rsa.h>

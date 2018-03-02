@@ -58,8 +58,8 @@
 #ifndef OPENSSL_NO_ENGINE
 # include <openssl/engine.h>
 #endif
-#include <openssl/err.h>
-#include <openssl/bn.h>
+#include "../../openssl/err.h"
+#include "../../openssl/bn.h"
 #ifdef OPENSSL_FIPS
 # include <openssl/fips.h>
 #endif

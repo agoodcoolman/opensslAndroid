@@ -58,7 +58,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <openssl/md4.h>
+#include "../../openssl/md4.h"
 
 #define BUFSIZE 1024*16
 

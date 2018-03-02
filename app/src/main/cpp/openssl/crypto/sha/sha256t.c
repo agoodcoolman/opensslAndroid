@@ -7,8 +7,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include <openssl/sha.h>
-#include <openssl/evp.h>
+#include "../../openssl/sha.h"
+#include "../../openssl/evp.h"
 
 #if defined(OPENSSL_NO_SHA) || defined(OPENSSL_NO_SHA256)
 int main(int argc, char *argv[])

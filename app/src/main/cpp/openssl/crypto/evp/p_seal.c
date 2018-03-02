@@ -58,13 +58,13 @@
 
 #include <stdio.h>
 #include "cryptlib.h"
-#include <openssl/rand.h>
+#include "../../openssl/rand.h"
 #ifndef OPENSSL_NO_RSA
 # include <openssl/rsa.h>
 #endif
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/x509.h>
+#include "../../openssl/evp.h"
+#include "../../openssl/objects.h"
+#include "../../openssl/x509.h"
 
 int EVP_SealInit(EVP_CIPHER_CTX *ctx, const EVP_CIPHER *type,
                  unsigned char **ek, int *ekl, unsigned char *iv,

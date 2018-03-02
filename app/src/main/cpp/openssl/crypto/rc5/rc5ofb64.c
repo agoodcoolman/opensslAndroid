@@ -56,7 +56,7 @@
  * [including the GNU Public Licence.]
  */
 
-#include <openssl/rc5.h>
+#include "../../openssl/rc5.h"
 #include "rc5_locl.h"
 
 /*

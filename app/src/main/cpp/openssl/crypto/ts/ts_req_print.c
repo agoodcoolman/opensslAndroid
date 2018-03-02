@@ -59,10 +59,10 @@
 
 #include <stdio.h>
 #include "cryptlib.h"
-#include <openssl/objects.h>
-#include <openssl/bn.h>
-#include <openssl/x509v3.h>
-#include <openssl/ts.h>
+#include "../../openssl/objects.h"
+#include "../../openssl/bn.h"
+#include "../../openssl/x509v3.h"
+#include "../../openssl/ts.h"
 
 /* Function definitions. */
 

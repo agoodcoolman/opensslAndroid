@@ -63,9 +63,9 @@
 # include <sys/time.h>
 #endif
 
-#include <openssl/objects.h>
-#include <openssl/ts.h>
-#include <openssl/pkcs7.h>
+#include "../../openssl/objects.h"
+#include "../../openssl/ts.h"
+#include "../../openssl/pkcs7.h"
 
 /* Private function declarations. */
 

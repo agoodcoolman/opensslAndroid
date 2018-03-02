@@ -18,7 +18,7 @@
  *  limitations under the License.
  */
 
-#include <openssl/opensslconf.h>
+#include "../../openssl/opensslconf.h"
 #ifndef OPENSSL_NO_EC_NISTP_64_GCC_128
 
 /*

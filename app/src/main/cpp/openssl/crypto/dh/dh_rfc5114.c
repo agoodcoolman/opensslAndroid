@@ -58,8 +58,8 @@
 
 #include <stdio.h>
 #include "cryptlib.h"
-#include <openssl/dh.h>
-#include <openssl/bn.h>
+#include "../../openssl/dh.h"
+#include "../../openssl/bn.h"
 
 /* DH parameters from RFC5114 */
 

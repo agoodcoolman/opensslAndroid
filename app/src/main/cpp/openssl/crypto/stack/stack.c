@@ -68,8 +68,8 @@
  */
 #include <stdio.h>
 #include "cryptlib.h"
-#include <openssl/stack.h>
-#include <openssl/objects.h>
+#include "../../openssl/stack.h"
+#include "../../openssl/objects.h"
 
 #undef MIN_NODES
 #define MIN_NODES       4

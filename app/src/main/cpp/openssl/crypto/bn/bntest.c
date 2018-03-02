@@ -83,11 +83,11 @@
 
 #include "e_os.h"
 
-#include <openssl/bio.h>
-#include <openssl/bn.h>
-#include <openssl/rand.h>
-#include <openssl/x509.h>
-#include <openssl/err.h>
+#include "../../openssl/bio.h"
+#include "../../openssl/bn.h"
+#include "../../openssl/rand.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/err.h"
 
 const int num0 = 100;           /* number of tests */
 const int num1 = 50;            /* additional tests for some functions */

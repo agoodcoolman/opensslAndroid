@@ -58,12 +58,12 @@
 
 #include <stdio.h>
 #include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/err.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
-#include <openssl/asn1_mac.h>
-#include <openssl/x509.h>
+#include "../../openssl/bn.h"
+#include "../../openssl/err.h"
+#include "../../openssl/objects.h"
+#include "../../openssl/evp.h"
+#include "../../openssl/asn1_mac.h"
+#include "../../openssl/x509.h"
 #ifndef OPENSSL_NO_RSA
 # include <openssl/rsa.h>
 #endif

@@ -1,5 +1,5 @@
-#include <openssl/bn.h>
-#include <openssl/rand.h>
+#include "../../openssl/bn.h"
+#include "../../openssl/rand.h"
 
 static int Rand(n)
 {

@@ -27,10 +27,10 @@
  */
 
 #include <string.h>
-#include <openssl/objects.h>
-#include <openssl/engine.h>
-#include <openssl/evp.h>
-#include <openssl/bn.h>
+#include "../../openssl/objects.h"
+#include "../../openssl/engine.h"
+#include "../../openssl/evp.h"
+#include "../../openssl/bn.h"
 
 #if (defined(__unix__) || defined(unix)) && !defined(USG) && \
         (defined(OpenBSD) || defined(__FreeBSD__))

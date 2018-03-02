@@ -59,7 +59,7 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <openssl/e_os2.h>
+#include "../../openssl/e_os2.h"
 
 #ifdef OPENSSL_NO_ENGINE
 int main(int argc, char *argv[])
