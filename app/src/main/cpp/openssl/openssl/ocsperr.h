@@ -11,7 +11,7 @@
 #ifndef HEADER_OCSPERR_H
 # define HEADER_OCSPERR_H
 
-# include <openssl/opensslconf.h>
+# include "opensslconf.h"
 
 # ifndef OPENSSL_NO_OCSP
 

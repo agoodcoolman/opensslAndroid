@@ -59,12 +59,12 @@
 #ifndef HEADER_PEM_H
 # define HEADER_PEM_H
 
-# include <e_os2.h>
+# include "e_os2.h"
 # ifndef OPENSSL_NO_BIO
-#  include <bio.h>
+#  include "bio.h"
 # endif
 # ifndef OPENSSL_NO_STACK
-#  include <stack.h>
+#  include "stack.h"
 # endif
 # include <evp.h>
 # include <x509.h>
