@@ -15,6 +15,7 @@ android {
                 arguments "NDK_PROJECT_PATH="+ System.getProperty('user.dir')
                 arguments "ANDROID_ARCH=arch-arm"
                 arguments "ANDROID_EABI=arm-linux-androideabi-4.9"
+
             }
 
         }

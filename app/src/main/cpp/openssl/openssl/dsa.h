@@ -65,14 +65,14 @@
 #ifndef HEADER_DSA_H
 # define HEADER_DSA_H
 
-# include <e_os2.h>
+# include "e_os2.h"
 
 # ifdef OPENSSL_NO_DSA
 #  error DSA is disabled.
 # endif
 
 # ifndef OPENSSL_NO_BIO
-#  include <bio.h>
+#  include "bio.h"
 # endif
 # include <crypto.h>
 # include <ossl_typ.h>

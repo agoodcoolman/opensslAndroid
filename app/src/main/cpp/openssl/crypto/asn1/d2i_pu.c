@@ -63,13 +63,13 @@
 #include "../../openssl/objects.h"
 #include "../../openssl/asn1.h"
 #ifndef OPENSSL_NO_RSA
-# include <openssl/rsa.h>
+# include "../../openssl/openssl/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-# include <openssl/dsa.h>
+# include "../../openssl/openssl/dsa.h"
 #endif
 #ifndef OPENSSL_NO_EC
-# include <openssl/ec.h>
+# include "../../openssl/openssl/ec.h"
 #endif
 
 EVP_PKEY *d2i_PublicKey(int type, EVP_PKEY **a, const unsigned char **pp,

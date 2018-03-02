@@ -16,7 +16,6 @@ local_src_files := constant_time_test.c  \
                    ppccap.c  \
                    s390xcap.c  \
                    uid.c  \
-                   armcap.c  \
                    cpt_err.c  \
                    cryptlib.c  \
                    ebcdic.c  \
@@ -703,7 +702,6 @@ local_src_files := constant_time_test.c  \
 
 
 local_c_include :=  $(NDK_PATH)/openssl \
-                    $(NDK_PATH)/openssl/crypto \
                     $(NDK_PATH)/openssl/openssl \
                     $(NDK_PATH)/openssl/crypto/asn1 \
                     $(NDK_PATH)/openssl/crypto/evp \
