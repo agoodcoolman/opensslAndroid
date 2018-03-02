@@ -11,7 +11,7 @@
 #ifndef HEADER_DHERR_H
 # define HEADER_DHERR_H
 
-# include <openssl/opensslconf.h>
+# include "opensslconf.h"
 
 # ifndef OPENSSL_NO_DH
 

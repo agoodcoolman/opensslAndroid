@@ -11,7 +11,7 @@
 #ifndef HEADER_ECERR_H
 # define HEADER_ECERR_H
 
-# include <openssl/opensslconf.h>
+# include "opensslconf.h"
 
 # ifndef OPENSSL_NO_EC
 

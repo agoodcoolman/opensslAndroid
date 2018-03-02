@@ -65,7 +65,7 @@
 # include "safestack.h"
 # include "e_os2.h"
 
-# include <ossl_typ.h>
+# include "ossl_typ.h"
 
 #ifdef  __cplusplus
 extern "C" {

@@ -11,7 +11,7 @@
 #ifndef HEADER_COMPERR_H
 # define HEADER_COMPERR_H
 
-# include <openssl/opensslconf.h>
+# include "opensslconf.h"
 
 # ifndef OPENSSL_NO_COMP
 

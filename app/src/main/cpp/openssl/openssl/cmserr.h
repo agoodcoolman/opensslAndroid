@@ -11,7 +11,7 @@
 #ifndef HEADER_CMSERR_H
 # define HEADER_CMSERR_H
 
-# include <openssl/opensslconf.h>
+# include "opensslconf.h"
 
 # ifndef OPENSSL_NO_CMS
 

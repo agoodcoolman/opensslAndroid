@@ -11,7 +11,7 @@
 #ifndef HEADER_ENGINE_H
 # define HEADER_ENGINE_H
 
-# include <openssl/opensslconf.h>
+# include "opensslconf.h"
 
 # ifndef OPENSSL_NO_ENGINE
 # if OPENSSL_API_COMPAT < 0x10100000L

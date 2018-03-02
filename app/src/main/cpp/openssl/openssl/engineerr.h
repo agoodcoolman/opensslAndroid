@@ -11,7 +11,7 @@
 #ifndef HEADER_ENGINEERR_H
 # define HEADER_ENGINEERR_H
 
-# include <openssl/opensslconf.h>
+# include "opensslconf.h"
 
 # ifndef OPENSSL_NO_ENGINE
 
