@@ -65,7 +65,7 @@
 # define HEADER_X509_H
 
 # include "e_os2.h"
-# include <symhacks.h>
+# include "symhacks.h"
 # ifndef OPENSSL_NO_BUFFER
 #  include "buffer.h"
 # endif
@@ -93,20 +93,20 @@
 
 # ifndef OPENSSL_NO_DEPRECATED
 #  ifndef OPENSSL_NO_RSA
-#   include <rsa.h>
+#   include "rsa.h"
 #  endif
 #  ifndef OPENSSL_NO_DSA
-#   include <dsa.h>
+#   include "dsa.h"
 #  endif
 #  ifndef OPENSSL_NO_DH
-#   include <dh.h>
+#   include "dh.h"
 #  endif
 # endif
 
 # ifndef OPENSSL_NO_SHA
 #  include "sha.h"
 # endif
-# include <ossl_typ.h>
+# include "ossl_typ.h"
 
 #ifdef  __cplusplus
 extern "C" {

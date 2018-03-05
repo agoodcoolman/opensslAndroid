@@ -67,9 +67,9 @@
 #  undef OPENSSL_ALGORITHM_DEFINES
 # endif
 
-# include <ossl_typ.h>
+# include "ossl_typ.h"
 
-# include <symhacks.h>
+# include "symhacks.h"
 
 # ifndef OPENSSL_NO_BIO
 #  include "bio.h"

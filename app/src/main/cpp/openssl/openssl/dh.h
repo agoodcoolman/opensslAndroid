@@ -70,7 +70,7 @@
 # endif
 # include "ossl_typ.h"
 # ifndef OPENSSL_NO_DEPRECATED
-#  include <bn.h>
+#  include "bn.h"
 # endif
 
 # ifndef OPENSSL_DH_MAX_MODULUS_BITS

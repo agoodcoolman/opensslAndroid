@@ -74,13 +74,13 @@
 # ifndef OPENSSL_NO_BIO
 #  include "bio.h"
 # endif
-# include <crypto.h>
-# include <ossl_typ.h>
+# include "crypto.h"
+# include "ossl_typ.h"
 
 # ifndef OPENSSL_NO_DEPRECATED
-#  include <bn.h>
+#  include "bn.h"
 #  ifndef OPENSSL_NO_DH
-#   include <dh.h>
+#   include "dh.h"
 #  endif
 # endif
 

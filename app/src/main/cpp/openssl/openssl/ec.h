@@ -83,9 +83,9 @@
 # endif
 
 # include "asn1.h"
-# include <symhacks.h>
+# include "symhacks.h"
 # ifndef OPENSSL_NO_DEPRECATED
-#  include <bn.h>
+#  include "bn.h"
 # endif
 
 # ifdef  __cplusplus

@@ -76,9 +76,9 @@
 # endif
 
 # include "ec.h"
-# include <ossl_typ.h>
+# include "ossl_typ.h"
 # ifndef OPENSSL_NO_DEPRECATED
-#  include <bn.h>
+#  include "bn.h"
 # endif
 
 #ifdef __cplusplus

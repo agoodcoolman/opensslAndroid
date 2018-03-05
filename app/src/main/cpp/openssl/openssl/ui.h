@@ -63,8 +63,8 @@
 # ifndef OPENSSL_NO_DEPRECATED
 #  include "crypto.h"
 # endif
-# include <safestack.h>
-# include <ossl_typ.h>
+# include "safestack.h"
+# include "ossl_typ.h"
 
 #ifdef  __cplusplus
 extern "C" {

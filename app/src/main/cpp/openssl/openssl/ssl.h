@@ -143,21 +143,21 @@
 #ifndef HEADER_SSL_H
 # define HEADER_SSL_H
 
-# include <e_os2.h>
+# include "e_os2.h"
 
 # ifndef OPENSSL_NO_COMP
 #  include "comp.h"
 # endif
 # ifndef OPENSSL_NO_BIO
-#  include <bio.h>
+#  include "bio.h"
 # endif
 # ifndef OPENSSL_NO_DEPRECATED
 #  ifndef OPENSSL_NO_X509
-#   include <x509.h>
+#   include "x509.h"
 #  endif
-#  include <crypto.h>
-#  include <lhash.h>
-#  include <buffer.h>
+#  include "crypto.h"
+#  include "lhash.h"
+#  include "buffer.h"
 # endif
 # include "pem.h"
 # include "hmac.h"

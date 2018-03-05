@@ -72,8 +72,8 @@
 #  include "lhash.h"
 # endif
 # include "bio.h"
-# include <crypto.h>
-# include <symhacks.h>
+# include "crypto.h"
+# include "symhacks.h"
 
 #ifdef  __cplusplus
 extern "C" {

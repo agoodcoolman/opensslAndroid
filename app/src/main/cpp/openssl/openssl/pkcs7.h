@@ -63,8 +63,8 @@
 # include "bio.h"
 # include "e_os2.h"
 
-# include <symhacks.h>
-# include <ossl_typ.h>
+# include "symhacks.h"
+# include "ossl_typ.h"
 
 #ifdef  __cplusplus
 extern "C" {

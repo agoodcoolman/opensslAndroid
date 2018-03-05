@@ -67,11 +67,11 @@
 # include "stack.h"
 # include "safestack.h"
 
-# include <symhacks.h>
+# include "symhacks.h"
 
-# include <ossl_typ.h>
+# include "ossl_typ.h"
 # ifndef OPENSSL_NO_DEPRECATED
-#  include <bn.h>
+#  include "bn.h"
 # endif
 
 # ifdef OPENSSL_BUILD_SHLIBCRYPTO

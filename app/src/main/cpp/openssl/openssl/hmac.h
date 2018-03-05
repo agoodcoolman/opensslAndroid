@@ -64,7 +64,7 @@
 #  error HMAC is disabled.
 # endif
 
-# include <evp.h>
+# include "evp.h"
 
 # define HMAC_MAX_MD_CBLOCK      128/* largest known is SHA512 */
 
