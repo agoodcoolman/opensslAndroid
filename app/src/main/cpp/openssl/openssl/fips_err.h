@@ -60,8 +60,8 @@
  */
 
 #include <stdio.h>
-#include <openssl/err.h>
-#include <openssl/fips.h>
+#include "err.h"
+#include "fips.h"
 
 /* BEGIN ERROR CODES */
 #ifndef OPENSSL_NO_ERR

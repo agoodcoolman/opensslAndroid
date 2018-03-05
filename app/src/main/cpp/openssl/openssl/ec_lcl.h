@@ -71,9 +71,9 @@
 
 #include <stdlib.h>
 
-#include <openssl/obj_mac.h>
-#include <openssl/ec.h>
-#include <openssl/bn.h>
+#include "obj_mac.h"
+#include "ec.h"
+#include "bn.h"
 
 #if defined(__SUNPRO_C)
 # if __SUNPRO_C >= 0x520

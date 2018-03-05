@@ -492,6 +492,6 @@ void _ossl_096_des_random_seed(des_cblock *key);
 #endif
 
 /* for DES_read_pw_string et al */
-# include <openssl/ui_compat.h>
+# include "ui_compat.h"
 
 #endif

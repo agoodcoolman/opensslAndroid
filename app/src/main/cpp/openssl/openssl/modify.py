@@ -21,8 +21,8 @@ def modify2(file):
     #写的方式打开文件
     with open(file, r'w') as f_w:
         for line in lines:
-            if re.match(r'#\s*include\s*(\<)openssl', line):
-                    line = re.sub('\".*openssl/', '\"', line)
+            if re.match(r'#\s*include\s*[\<|\"].*openssl', line):
+                    line = re.sub(r'[\<|\"].*/?openssl/', '\"', line)
                     line = line.replace('>', '\"')
 
             f_w.write(line)

@@ -60,7 +60,7 @@
 #ifndef HEADER_TS_H
 # define HEADER_TS_H
 
-# include <opensslconf.h>
+# include <opensslconf.h"
 # include <symhacks.h>
 # ifndef OPENSSL_NO_BUFFER
 #  include <buffer.h>

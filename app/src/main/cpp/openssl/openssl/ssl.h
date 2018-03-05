@@ -146,7 +146,7 @@
 # include <e_os2.h>
 
 # ifndef OPENSSL_NO_COMP
-#  include <openssl/comp.h>
+#  include "comp.h"
 # endif
 # ifndef OPENSSL_NO_BIO
 #  include <bio.h>

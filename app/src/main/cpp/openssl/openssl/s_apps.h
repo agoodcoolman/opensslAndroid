@@ -112,7 +112,7 @@
 #if !defined(OPENSSL_SYS_NETWARE)
 # include <sys/types.h>
 #endif
-#include <../openssl/opensslconf.h>
+#include "opensslconf.h"
 
 #if defined(OPENSSL_SYS_WINDOWS) || defined(OPENSSL_SYS_MSDOS)
 # include <conio.h>

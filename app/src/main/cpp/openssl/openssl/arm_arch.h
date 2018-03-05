@@ -49,7 +49,7 @@
 # endif
 
 # ifdef OPENSSL_FIPSCANISTER
-#  include <openssl/fipssyms.h>
+#  include "fipssyms.h"
 # endif
 
 # if !defined(__ARM_MAX_ARCH__)

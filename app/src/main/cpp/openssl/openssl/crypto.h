@@ -131,7 +131,7 @@
 # include "ossl_typ.h"
 
 # ifdef CHARSET_EBCDIC
-#  include <openssl/ebcdic.h>
+#  include "ebcdic.h"
 # endif
 
 /*

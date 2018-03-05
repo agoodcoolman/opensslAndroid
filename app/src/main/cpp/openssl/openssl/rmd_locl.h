@@ -58,8 +58,8 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <openssl/opensslconf.h>
-#include <openssl/ripemd.h>
+#include "opensslconf.h"
+#include "ripemd.h"
 
 #ifndef RIPEMD160_LONG_LOG2
 # define RIPEMD160_LONG_LOG2 2  /* default to 32 bits */
