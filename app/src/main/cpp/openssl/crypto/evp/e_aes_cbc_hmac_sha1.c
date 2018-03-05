@@ -54,11 +54,11 @@
 
 #if !defined(OPENSSL_NO_AES) && !defined(OPENSSL_NO_SHA1)
 
-# include <openssl/evp.h>
-# include <openssl/objects.h>
-# include <openssl/aes.h>
-# include <openssl/sha.h>
-# include <openssl/rand.h>
+#include "../../openssl/evp.h"
+#include "../../openssl/objects.h"
+#include "../../openssl/aes.h"
+#include "../../openssl/sha.h"
+#include "../../openssl/rand.h"
 # include "modes_lcl.h"
 # include "constant_time_locl.h"
 

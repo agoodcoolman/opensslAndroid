@@ -61,13 +61,13 @@
 #include "../../openssl/buffer.h"
 #include "../../openssl/bn.h"
 #ifndef OPENSSL_NO_RSA
-# include <openssl/rsa.h>
+#include "../../openssl/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-# include <openssl/dsa.h>
+#include "../../openssl/dsa.h"
 #endif
 #ifndef OPENSSL_NO_EC
-# include <openssl/ec.h>
+#include "../../openssl/ec.h"
 #endif
 #include "../../openssl/objects.h"
 #include "../../openssl/x509.h"

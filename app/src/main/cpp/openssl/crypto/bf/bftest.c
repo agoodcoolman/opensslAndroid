@@ -75,10 +75,10 @@ int main(int argc, char *argv[])
     return (0);
 }
 #else
-# include <openssl/blowfish.h>
+#include "../../openssl/blowfish.h"
 
 # ifdef CHARSET_EBCDIC
-#  include <openssl/ebcdic.h>
+#include "../../openssl/ebcdic.h"
 # endif
 
 static char *bf_key[2] = {

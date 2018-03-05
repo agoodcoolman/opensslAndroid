@@ -60,12 +60,12 @@
 #include <time.h>
 #include "cryptlib.h"
 #ifndef OPENSSL_NO_SHA
-# include <openssl/bn.h>
-# include <openssl/dsa.h>
-# include <openssl/rand.h>
+#include "../../openssl/bn.h"
+#include "../../openssl/dsa.h"
+#include "../../openssl/rand.h"
 
 # ifdef OPENSSL_FIPS
-#  include <openssl/fips.h>
+#include "../../openssl/fips.h"
 # endif
 
 static int dsa_builtin_keygen(DSA *dsa);

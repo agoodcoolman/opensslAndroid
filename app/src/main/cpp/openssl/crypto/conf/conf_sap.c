@@ -65,7 +65,7 @@
 #include "../../openssl/x509.h"
 #include "../../openssl/asn1.h"
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 
 /*

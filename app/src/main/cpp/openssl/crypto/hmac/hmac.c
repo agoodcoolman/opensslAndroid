@@ -62,7 +62,7 @@
 #include "../../openssl/hmac.h"
 
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 
 int HMAC_Init_ex(HMAC_CTX *ctx, const void *key, int len,

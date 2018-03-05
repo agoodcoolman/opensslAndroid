@@ -70,11 +70,11 @@
 #include "ech_locl.h"
 #include <string.h>
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 #include "../../openssl/err.h"
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 
 const char ECDH_version[] = "ECDH" OPENSSL_VERSION_PTEXT;

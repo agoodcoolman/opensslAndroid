@@ -74,7 +74,7 @@
 #ifndef OPENSSL_NO_EC2M
 
 # ifdef OPENSSL_FIPS
-#  include <openssl/fips.h>
+#include "../../openssl/fips.h"
 # endif
 
 const EC_METHOD *EC_GF2m_simple_method(void)

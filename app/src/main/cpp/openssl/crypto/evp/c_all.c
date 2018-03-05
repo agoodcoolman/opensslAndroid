@@ -60,7 +60,7 @@
 #include "cryptlib.h"
 #include "../../openssl/evp.h"
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 
 #if 0

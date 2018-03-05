@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
     return (0);
 }
 #else
-# include <openssl/rc2.h>
+#include "../../openssl/rc2.h"
 
 static unsigned char RC2key[4][16] = {
     {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,

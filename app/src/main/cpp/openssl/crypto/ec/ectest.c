@@ -87,16 +87,16 @@ int main(int argc, char *argv[])
 }
 #else
 
-# include <openssl/ec.h>
+#include "../../openssl/ec.h"
 # ifndef OPENSSL_NO_ENGINE
-#  include <openssl/engine.h>
+#include "../../openssl/engine.h"
 # endif
-# include <openssl/err.h>
-# include <openssl/obj_mac.h>
-# include <openssl/objects.h>
-# include <openssl/rand.h>
-# include <openssl/bn.h>
-# include <openssl/opensslconf.h>
+#include "../../openssl/err.h"
+#include "../../openssl/obj_mac.h"
+#include "../../openssl/objects.h"
+#include "../../openssl/rand.h"
+#include "../../openssl/bn.h"
+#include "../../openssl/opensslconf.h"
 
 # if defined(_MSC_VER) && defined(_MIPS_) && (_MSC_VER/100==12)
 /* suppress "too big too optimize" warning */

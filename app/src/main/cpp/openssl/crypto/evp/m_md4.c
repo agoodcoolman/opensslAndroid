@@ -61,12 +61,12 @@
 
 #ifndef OPENSSL_NO_MD4
 
-# include <openssl/evp.h>
-# include <openssl/objects.h>
-# include <openssl/x509.h>
-# include <openssl/md4.h>
+#include "../../openssl/evp.h"
+#include "../../openssl/objects.h"
+#include "../../openssl/x509.h"
+#include "../../openssl/md4.h"
 # ifndef OPENSSL_NO_RSA
-#  include <openssl/rsa.h>
+#include "../../openssl/rsa.h"
 # endif
 
 # include "evp_locl.h"

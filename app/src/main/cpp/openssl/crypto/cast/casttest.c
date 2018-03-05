@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
     return (0);
 }
 #else
-# include <openssl/cast.h>
+#include "../../openssl/cast.h"
 
 # define FULL_TEST
 

@@ -61,7 +61,7 @@
 #include "../../openssl/evp.h"
 #include "../../openssl/objects.h"
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 # include "evp_locl.h"
 #endif
 

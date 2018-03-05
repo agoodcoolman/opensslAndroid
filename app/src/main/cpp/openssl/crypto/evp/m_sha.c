@@ -61,11 +61,11 @@
 
 #if !defined(OPENSSL_NO_SHA) && !defined(OPENSSL_NO_SHA0)
 
-# include <openssl/evp.h>
-# include <openssl/objects.h>
-# include <openssl/x509.h>
+#include "../../openssl/evp.h"
+#include "../../openssl/objects.h"
+#include "../../openssl/x509.h"
 # ifndef OPENSSL_NO_RSA
-#  include <openssl/rsa.h>
+#include "../../openssl/rsa.h"
 # endif
 # include "evp_locl.h"
 

@@ -65,10 +65,10 @@
 #include "../../openssl/x509.h"
 #include "../../openssl/ocsp.h"
 #ifndef OPENSSL_NO_RSA
-# include <openssl/rsa.h>
+#include "../../openssl/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-# include <openssl/dsa.h>
+#include "../../openssl/dsa.h"
 #endif
 
 int X509_verify(X509 *a, EVP_PKEY *r)

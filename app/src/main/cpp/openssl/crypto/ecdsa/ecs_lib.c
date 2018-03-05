@@ -56,12 +56,12 @@
 #include <string.h>
 #include "ecs_locl.h"
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 #include "../../openssl/err.h"
 #include "../../openssl/bn.h"
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 
 const char ECDSA_version[] = "ECDSA" OPENSSL_VERSION_PTEXT;

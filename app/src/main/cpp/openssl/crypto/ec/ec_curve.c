@@ -76,7 +76,7 @@
 #include "../../openssl/opensslconf.h"
 
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 
 typedef struct {

@@ -68,7 +68,7 @@
 #include "ec_lcl.h"
 
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 
 const EC_METHOD *EC_GFp_nist_method(void)

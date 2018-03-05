@@ -114,11 +114,11 @@
 #include "../../openssl/objects.h"
 #include "../../openssl/evp.h"
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 # include "evp_locl.h"
 #endif
 

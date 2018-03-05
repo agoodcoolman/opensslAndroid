@@ -61,7 +61,7 @@
 #include "../../openssl/asn1t.h"
 #include "../../openssl/x509.h"
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 #include "asn1_locl.h"
 

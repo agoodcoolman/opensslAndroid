@@ -62,7 +62,7 @@
 #include "../../openssl/ec.h"
 #include "../../openssl/bn.h"
 #ifndef OPENSSL_NO_CMS
-# include <openssl/cms.h>
+#include "../../openssl/cms.h"
 #endif
 #include "../../openssl/asn1t.h"
 #include "asn1_locl.h"

@@ -60,7 +60,7 @@
 #include "cryptlib.h"
 #include "../../openssl/rand.h"
 #ifndef OPENSSL_NO_RSA
-# include <openssl/rsa.h>
+#include "../../openssl/rsa.h"
 #endif
 #include "../../openssl/evp.h"
 #include "../../openssl/objects.h"

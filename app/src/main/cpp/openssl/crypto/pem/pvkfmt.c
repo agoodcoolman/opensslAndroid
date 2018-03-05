@@ -66,8 +66,8 @@
 #include "../../openssl/rand.h"
 #include "../../openssl/bn.h"
 #if !defined(OPENSSL_NO_RSA) && !defined(OPENSSL_NO_DSA)
-# include <openssl/dsa.h>
-# include <openssl/rsa.h>
+#include "../../openssl/dsa.h"
+#include "../../openssl/rsa.h"
 
 /*
  * Utility function: read a DWORD (4 byte unsigned integer) in little endian

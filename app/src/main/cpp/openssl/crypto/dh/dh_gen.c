@@ -67,7 +67,7 @@
 #include "../../openssl/dh.h"
 
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 
 static int dh_builtin_genparams(DH *ret, int prime_len, int generator,

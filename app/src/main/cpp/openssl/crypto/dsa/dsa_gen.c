@@ -79,16 +79,16 @@
 
 # include <stdio.h>
 # include "cryptlib.h"
-# include <openssl/evp.h>
-# include <openssl/bn.h>
-# include <openssl/rand.h>
-# include <openssl/sha.h>
+#include "../../openssl/evp.h"
+#include "../../openssl/bn.h"
+#include "../../openssl/rand.h"
+#include "../../openssl/sha.h"
 # include "dsa_locl.h"
 
 # ifdef OPENSSL_FIPS
 /* Workaround bug in prototype */
 #  define fips_dsa_builtin_paramgen2 fips_dsa_paramgen_bad
-#  include <openssl/fips.h>
+#include "../../openssl/fips.h"
 # endif
 
 int DSA_generate_parameters_ex(DSA *ret, int bits,

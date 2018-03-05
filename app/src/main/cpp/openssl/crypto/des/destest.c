@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
     return (0);
 }
 #else
-# include <openssl/des.h>
+#include "../../openssl/des.h"
 
 # define crypt(c,s) (DES_crypt((c),(s)))
 

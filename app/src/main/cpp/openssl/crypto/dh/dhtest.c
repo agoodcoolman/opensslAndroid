@@ -83,7 +83,7 @@ int main(int argc, char *argv[])
     return (0);
 }
 #else
-# include <openssl/dh.h>
+#include "../../openssl/dh.h"
 
 # ifdef OPENSSL_SYS_WIN16
 #  define MS_CALLBACK     _far _loadds

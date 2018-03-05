@@ -56,8 +56,8 @@
 #include "../openssl/e_os.h"
 #include "../openssl/err.h"
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
-# include <openssl/rand.h>
+#include "../../openssl/fips.h"
+#include "../../openssl/rand.h"
 #endif
 
 /*

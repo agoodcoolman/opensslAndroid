@@ -66,10 +66,10 @@
 #include "../../openssl/evp.h"
 #include "../../openssl/x509v3.h"
 #ifndef OPENSSL_NO_CMS
-# include <openssl/cms.h>
+#include "../../openssl/cms.h"
 #endif
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 #include "evp_locl.h"
 #include "rsa_locl.h"

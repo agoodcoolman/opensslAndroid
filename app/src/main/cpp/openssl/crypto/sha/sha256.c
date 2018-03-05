@@ -10,9 +10,9 @@
 # include <stdlib.h>
 # include <string.h>
 
-# include <openssl/crypto.h>
-# include <openssl/sha.h>
-# include <openssl/opensslv.h>
+#include "../../openssl/crypto.h"
+#include "../../openssl/sha.h"
+#include "../../openssl/opensslv.h"
 
 const char SHA256_version[] = "SHA-256" OPENSSL_VERSION_PTEXT;
 

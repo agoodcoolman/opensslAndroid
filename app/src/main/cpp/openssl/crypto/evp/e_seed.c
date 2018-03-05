@@ -55,11 +55,11 @@
 
 #include "../../openssl/opensslconf.h"
 #ifndef OPENSSL_NO_SEED
-# include <openssl/evp.h>
-# include <openssl/err.h>
+#include "../../openssl/evp.h"
+#include "../../openssl/err.h"
 # include <string.h>
 # include <assert.h>
-# include <openssl/seed.h>
+#include "../../openssl/seed.h"
 # include "evp_locl.h"
 
 static int seed_init_key(EVP_CIPHER_CTX *ctx, const unsigned char *key,

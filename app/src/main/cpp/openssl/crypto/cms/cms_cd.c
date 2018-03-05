@@ -60,7 +60,7 @@
 #include "../../openssl/cms.h"
 #include "../../openssl/bio.h"
 #ifndef OPENSSL_NO_COMP
-# include <openssl/comp.h>
+#include "../../openssl/comp.h"
 #endif
 #include "cms_lcl.h"
 

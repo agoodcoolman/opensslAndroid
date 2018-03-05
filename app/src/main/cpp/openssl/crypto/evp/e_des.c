@@ -59,11 +59,11 @@
 #include <stdio.h>
 #include "cryptlib.h"
 #ifndef OPENSSL_NO_DES
-# include <openssl/evp.h>
-# include <openssl/objects.h>
+#include "../../openssl/evp.h"
+#include "../../openssl/objects.h"
 # include "evp_locl.h"
-# include <openssl/des.h>
-# include <openssl/rand.h>
+#include "../../openssl/des.h"
+#include "../../openssl/rand.h"
 
 typedef struct {
     union {

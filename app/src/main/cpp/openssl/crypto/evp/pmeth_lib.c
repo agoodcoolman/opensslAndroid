@@ -63,7 +63,7 @@
 #include "../../openssl/objects.h"
 #include "../../openssl/evp.h"
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 #include "asn1_locl.h"
 #include "evp_locl.h"

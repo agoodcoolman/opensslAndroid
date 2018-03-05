@@ -64,7 +64,7 @@
 #include "../../openssl/bn.h"
 #include "asn1_locl.h"
 #ifndef OPENSSL_NO_CMS
-# include <openssl/cms.h>
+#include "../../openssl/cms.h"
 #endif
 
 extern const EVP_PKEY_ASN1_METHOD dhx_asn1_meth;

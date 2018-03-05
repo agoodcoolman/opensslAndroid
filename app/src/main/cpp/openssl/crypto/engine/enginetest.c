@@ -68,10 +68,10 @@ int main(int argc, char *argv[])
     return (0);
 }
 #else
-# include <openssl/buffer.h>
-# include <openssl/crypto.h>
-# include <openssl/engine.h>
-# include <openssl/err.h>
+#include "../../openssl/buffer.h"
+#include "../../openssl/crypto.h"
+#include "../../openssl/engine.h"
+#include "../../openssl/err.h"
 
 static void display_engine_list(void)
 {

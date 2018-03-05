@@ -64,7 +64,7 @@
 #include "../../openssl/rsa.h"
 #include "../../openssl/rand.h"
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 
 int RSA_size(const RSA *r)

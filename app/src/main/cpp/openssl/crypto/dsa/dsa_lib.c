@@ -64,14 +64,14 @@
 #include "../../openssl/dsa.h"
 #include "../../openssl/asn1.h"
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 #ifndef OPENSSL_NO_DH
-# include <openssl/dh.h>
+#include "../../openssl/dh.h"
 #endif
 
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 
 const char DSA_version[] = "DSA" OPENSSL_VERSION_PTEXT;

@@ -68,10 +68,10 @@
 #include "../../openssl/pkcs12.h"
 #include "asn1_locl.h"
 #ifndef OPENSSL_NO_DES
-# include <openssl/des.h>
+#include "../../openssl/des.h"
 #endif
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 
 const char PEM_version[] = "PEM" OPENSSL_VERSION_PTEXT;

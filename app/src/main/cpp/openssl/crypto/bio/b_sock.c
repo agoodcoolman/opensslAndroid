@@ -70,7 +70,7 @@ NETDB_DEFINE_CONTEXT
 # endif
 #endif
 #ifndef OPENSSL_NO_SOCK
-# include <openssl/dso.h>
+#include "../../openssl/dso.h"
 # define SOCKET_PROTOCOL IPPROTO_TCP
 # ifdef SO_MAXCONN
 #  define MAX_LISTEN  SO_MAXCONN

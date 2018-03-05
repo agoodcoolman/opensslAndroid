@@ -62,10 +62,10 @@
 #include "../../openssl/err.h"
 #include "../../openssl/rand.h"
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 #include "evp_locl.h"
 

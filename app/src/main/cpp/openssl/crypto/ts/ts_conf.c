@@ -63,7 +63,7 @@
 #include "cryptlib.h"
 #include "../../openssl/pem.h"
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 #include "../../openssl/ts.h"
 

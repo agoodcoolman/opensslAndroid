@@ -69,11 +69,11 @@ int main(int argc, char *argv[])
     return (0);
 }
 #else
-# include <openssl/evp.h>
-# include <openssl/sha.h>
+#include "../../openssl/evp.h"
+#include "../../openssl/sha.h"
 
 # ifdef CHARSET_EBCDIC
-#  include <openssl/ebcdic.h>
+#include "../../openssl/ebcdic.h"
 # endif
 
 # undef SHA_0                   /* FIPS 180 */

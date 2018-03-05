@@ -69,13 +69,13 @@ int main(int argc, char *argv[])
     return (0);
 }
 #else
-# include <openssl/hmac.h>
+#include "../../openssl/hmac.h"
 # ifndef OPENSSL_NO_MD5
-#  include <openssl/md5.h>
+#include "../../openssl/md5.h"
 # endif
 
 # ifdef CHARSET_EBCDIC
-#  include <openssl/ebcdic.h>
+#include "../../openssl/ebcdic.h"
 # endif
 
 # ifndef OPENSSL_NO_MD5

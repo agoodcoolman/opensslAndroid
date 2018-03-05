@@ -62,10 +62,10 @@
 #include "../../openssl/x509.h"
 #include "asn1_locl.h"
 #ifndef OPENSSL_NO_RSA
-# include <openssl/rsa.h>
+#include "../../openssl/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-# include <openssl/dsa.h>
+#include "../../openssl/dsa.h"
 #endif
 
 /* Minor tweak to operation: free up EVP_PKEY */

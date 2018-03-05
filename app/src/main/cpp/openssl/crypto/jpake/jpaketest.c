@@ -12,8 +12,8 @@ int main(int argc, char *argv[])
 
 #else
 
-# include <openssl/jpake.h>
-# include <openssl/err.h>
+#include "../../openssl/jpake.h"
+#include "../../openssl/err.h"
 
 static void showbn(const char *name, const BIGNUM *bn)
 {

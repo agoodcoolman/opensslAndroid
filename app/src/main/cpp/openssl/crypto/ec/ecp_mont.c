@@ -64,7 +64,7 @@
 #include "../../openssl/err.h"
 
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 
 #include "ec_lcl.h"

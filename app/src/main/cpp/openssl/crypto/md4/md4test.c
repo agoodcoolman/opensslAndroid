@@ -69,8 +69,8 @@ int main(int argc, char *argv[])
     return (0);
 }
 #else
-# include <openssl/evp.h>
-# include <openssl/md4.h>
+#include "../../openssl/evp.h"
+#include "../../openssl/md4.h"
 
 static char *test[] = {
     "",

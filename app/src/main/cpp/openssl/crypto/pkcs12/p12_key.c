@@ -67,7 +67,7 @@
  * #define DEBUG_KEYGEN
  */
 #ifdef DEBUG_KEYGEN
-# include <openssl/bio.h>
+#include "../../openssl/bio.h"
 extern BIO *bio_err;
 void h__dump(unsigned char *p, int len);
 #endif

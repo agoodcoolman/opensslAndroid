@@ -61,11 +61,11 @@
 #include "../../openssl/bn.h"
 #include "../../openssl/dh.h"
 #ifndef OPENSSL_NO_ENGINE
-# include <openssl/engine.h>
+#include "../../openssl/engine.h"
 #endif
 
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 
 const char DH_version[] = "Diffie-Hellman" OPENSSL_VERSION_PTEXT;

@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     return (0);
 }
 #else
-# include <openssl/rsa.h>
+#include "../../openssl/rsa.h"
 
 # define SetKey \
   key->n = BN_bin2bn(n, sizeof(n)-1, key->n); \

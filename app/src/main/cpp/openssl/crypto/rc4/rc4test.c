@@ -69,8 +69,8 @@ int main(int argc, char *argv[])
     return (0);
 }
 #else
-# include <openssl/rc4.h>
-# include <openssl/sha.h>
+#include "../../openssl/rc4.h"
+#include "../../openssl/sha.h"
 
 static unsigned char keys[7][30] = {
     {8, 0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef},

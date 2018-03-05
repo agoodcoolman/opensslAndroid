@@ -59,7 +59,7 @@
 #include "../../openssl/cmac.h"
 
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 
 struct CMAC_CTX_st {

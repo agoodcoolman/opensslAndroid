@@ -64,7 +64,7 @@
 #include "../../openssl/dh.h"
 #include "../../openssl/bn.h"
 #ifndef OPENSSL_NO_DSA
-# include <openssl/dsa.h>
+#include "../../openssl/dsa.h"
 #endif
 #include "../../openssl/objects.h"
 #include "evp_locl.h"

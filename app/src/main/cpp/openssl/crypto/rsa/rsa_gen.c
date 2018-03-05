@@ -68,7 +68,7 @@
 #include "../../openssl/bn.h"
 #include "../../openssl/rsa.h"
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 extern int FIPS_rsa_x931_generate_key_ex(RSA *rsa, int bits, BIGNUM *e,
                                          BN_GENCB *cb);
 #endif

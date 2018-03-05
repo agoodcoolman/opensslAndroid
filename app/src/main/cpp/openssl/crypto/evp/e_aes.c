@@ -51,14 +51,14 @@
 #include "../../openssl/opensslconf.h"
 #ifndef OPENSSL_NO_AES
 #include "../../openssl/crypto.h"
-# include <openssl/evp.h>
-# include <openssl/err.h>
+#include "../../openssl/evp.h"
+#include "../../openssl/err.h"
 # include <string.h>
 # include <assert.h>
-# include <openssl/aes.h>
+#include "../../openssl/aes.h"
 # include "evp_locl.h"
 # include "modes_lcl.h"
-# include <openssl/rand.h>
+#include "../../openssl/rand.h"
 
 # undef EVP_CIPH_FLAG_FIPS
 # define EVP_CIPH_FLAG_FIPS 0

@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
 
 #else
 
-# include <openssl/srp.h>
-# include <openssl/rand.h>
-# include <openssl/err.h>
+#include "../../openssl/srp.h"
+#include "../../openssl/rand.h"
+#include "../../openssl/err.h"
 
 static void showbn(const char *name, const BIGNUM *bn)
 {

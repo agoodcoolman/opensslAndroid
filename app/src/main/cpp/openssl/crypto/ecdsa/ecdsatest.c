@@ -83,16 +83,16 @@ int main(int argc, char *argv[])
 }
 #else
 
-# include <openssl/crypto.h>
-# include <openssl/bio.h>
-# include <openssl/evp.h>
-# include <openssl/bn.h>
-# include <openssl/ecdsa.h>
+#include "../../openssl/crypto.h"
+#include "../../openssl/bio.h"
+#include "../../openssl/evp.h"
+#include "../../openssl/bn.h"
+#include "../../openssl/ecdsa.h"
 # ifndef OPENSSL_NO_ENGINE
-#  include <openssl/engine.h>
+#include "../../openssl/engine.h"
 # endif
-# include <openssl/err.h>
-# include <openssl/rand.h>
+#include "../../openssl/err.h"
+#include "../../openssl/rand.h"
 
 static const char rnd_seed[] = "string to make the random number generator "
     "think it has entropy";

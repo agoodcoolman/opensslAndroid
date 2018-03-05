@@ -65,7 +65,7 @@
 #include "ec_lcl.h"
 #include "../../openssl/err.h"
 #ifdef OPENSSL_FIPS
-# include <openssl/fips.h>
+#include "../../openssl/fips.h"
 #endif
 
 EC_KEY *EC_KEY_new(void)

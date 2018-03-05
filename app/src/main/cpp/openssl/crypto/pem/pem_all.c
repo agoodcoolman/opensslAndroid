@@ -117,13 +117,13 @@
 #include "../../openssl/pkcs7.h"
 #include "../../openssl/pem.h"
 #ifndef OPENSSL_NO_RSA
-# include <openssl/rsa.h>
+#include "../../openssl/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-# include <openssl/dsa.h>
+#include "../../openssl/dsa.h"
 #endif
 #ifndef OPENSSL_NO_DH
-# include <openssl/dh.h>
+#include "../../openssl/dh.h"
 #endif
 
 #ifndef OPENSSL_NO_RSA
