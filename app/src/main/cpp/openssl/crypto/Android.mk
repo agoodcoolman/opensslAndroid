@@ -660,10 +660,7 @@ local_src_files := cversion.c  \
 
 local_c_include :=  $(NDK_PATH)/openssl/openssl \
                     $(NDK_PATH)/openssl \
-                    $(NDK_PATH)/openssl/crypto/asn1 \
-                    $(NDK_PATH)/openssl/crypto/evp \
-                    $(NDK_PATH)/openssl/crypto/aes \
-                    $(NDK_PATH)/openssl/crypto/bio \
+
 
 
 local_c_flags := -DNO_WINDOWS_BRAINDEATH

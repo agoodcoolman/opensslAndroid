@@ -130,8 +130,8 @@
 # ifndef OPENSSL_NO_FP_API
 #  include <stdio.h>            /* FILE */
 # endif
-# include <ossl_typ.h>
-# include <crypto.h>
+# include "ossl_typ.h"
+# include "crypto.h"
 
 #ifdef  __cplusplus
 extern "C" {

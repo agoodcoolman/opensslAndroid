@@ -14,7 +14,7 @@
 #include "../openssl/crypto.h"
 #include "../openssl/bn.h"
 
-#include "ppc_arch.h"
+#include "../openssl/ppc_arch.h"
 
 unsigned int OPENSSL_ppccap_P = 0;
 
