@@ -1,9 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := bad_dtls_test.c \
-                   bio_ssl.c \
-                   clienthellotest.c \
+LOCAL_SRC_FILES := bio_ssl.c \
                    d1_both.c \
                    d1_clnt.c \
                    d1_lib.c \
@@ -11,9 +9,6 @@ LOCAL_SRC_FILES := bad_dtls_test.c \
                    d1_pkt.c \
                    d1_srtp.c \
                    d1_srvr.c \
-                   dtlstest.c \
-                   fatalerrtest.c \
-                   heartbeat_test.c \
                    kssl.c \
                    s23_clnt.c \
                    s23_lib.c \
@@ -61,9 +56,7 @@ LOCAL_SRC_FILES := bad_dtls_test.c \
 
 
 
-local_c_include := \
-                    $(NDK_PATH) \
-                    $(NDK_PATH)/openssl/openssl \
+local_c_include :=  $(NDK_PATH)/openssl/openssl \
                     $(NDK_PATH)/openssl/internal \
                     $(NDK_PATH)/openssl/crypto/asn1 \
                     $(NDK_PATH)/openssl/crypto/evp \

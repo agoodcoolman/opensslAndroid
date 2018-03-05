@@ -62,12 +62,14 @@ LOCAL_SRC_FILES := cms.c\
 LOCAL_SHARED_LIBRARY := libssl \
                         libcrypto
 
-LOCAL_C_INCLUDES += $(NDK_PATH) \
+LOCAL_C_INCLUDES += $(NDK_PATH)/openssl/openssl \
                     $(NDK_PATH)/openssl/apps \
-                    $(NDK_PATH)/openssl/openssl
+
 
 LOCAL_CFLAGS := -DMONOLITH
 LOCAL_CFLAGS += -DOPENSSL_NO_DTLS1 -DLPDIR_H
 include $(NDK_PATH)/android-config.mk
 LOCAL_MODULE := openssl
-include $(BUILD_SHARED_LIBRARY)
+#include $(BUILD_SHARED_LIBRARY)
+LOCAL_MODULE_TAGS := tests
+include $(BUILD_EXECUTABLE)

@@ -3,12 +3,10 @@ include $(CLEAR_VARS)
 arm_cflags := -DOPENSSL_BN_ASM_MONT -DAES_ASM -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM
 
 
-local_src_files := constant_time_test.c  \
-                   cversion.c  \
+local_src_files := cversion.c  \
                    mem.c  \
                    mem_clr.c  \
                    mem_dbg.c  \
-                   o_dir_test.c  \
                    o_fips.c  \
                    o_init.c  \
                    o_str.c  \
@@ -117,7 +115,6 @@ local_src_files := constant_time_test.c  \
                    bf/bf_opts.c  \
                    bf/bf_skey.c  \
                    bf/bfspeed.c  \
-                   bf/bftest.c  \
                    bio/b_dump.c  \
                    bio/b_print.c  \
                    bio/b_sock.c  \
@@ -168,11 +165,8 @@ local_src_files := constant_time_test.c  \
                    bn/bn_word.c  \
                    bn/bn_x931p.c  \
                    bn/bnspeed.c  \
-                   bn/bntest.c  \
-                   bn/divtest.c  \
                    bn/exp.c  \
                    bn/expspeed.c  \
-                   bn/exptest.c  \
                    bn/rsaz_exp.c  \
                    bn/vms-helper.c  \
                    bn/asm/x86_64-gcc.c  \
@@ -194,7 +188,6 @@ local_src_files := constant_time_test.c  \
                    cast/c_skey.c  \
                    cast/cast_spd.c  \
                    cast/castopts.c  \
-                   cast/casttest.c  \
                    cmac/cm_ameth.c  \
                    cmac/cm_pmeth.c  \
                    cmac/cmac.c  \
@@ -224,7 +217,6 @@ local_src_files := constant_time_test.c  \
                    conf/conf_mall.c  \
                    conf/conf_mod.c  \
                    conf/conf_sap.c  \
-                   conf/test.c  \
                    des/cbc3_enc.c  \
                    des/cbc_cksm.c  \
                    des/cbc_enc.c  \
@@ -236,7 +228,6 @@ local_src_files := constant_time_test.c  \
                    des/des_old.c  \
                    des/des_old2.c  \
                    des/des_opts.c  \
-                   des/destest.c  \
                    des/ecb3_enc.c  \
                    des/ecb_enc.c  \
                    des/ede_cbcm_enc.c  \
@@ -271,7 +262,6 @@ local_src_files := constant_time_test.c  \
                    dh/dh_pmeth.c  \
                    dh/dh_prn.c  \
                    dh/dh_rfc5114.c  \
-                   dh/dhtest.c  \
                    dh/p1024.c  \
                    dh/p192.c  \
                    dh/p512.c  \
@@ -288,7 +278,6 @@ local_src_files := constant_time_test.c  \
                    dsa/dsa_sign.c  \
                    dsa/dsa_vrf.c  \
                    dsa/dsagen.c  \
-                   dsa/dsatest.c  \
                    dso/dso_beos.c  \
                    dso/dso_dl.c  \
                    dso/dso_dlfcn.c  \
@@ -324,14 +313,11 @@ local_src_files := constant_time_test.c  \
                    ec/ecp_nistz256_table.c  \
                    ec/ecp_oct.c  \
                    ec/ecp_smpl.c  \
-                   ec/ectest.c  \
-                   ecdh/ecdhtest.c  \
                    ecdh/ech_err.c  \
                    ecdh/ech_kdf.c  \
                    ecdh/ech_key.c  \
                    ecdh/ech_lib.c  \
                    ecdh/ech_ossl.c  \
-                   ecdsa/ecdsatest.c  \
                    ecdsa/ecs_asn1.c  \
                    ecdsa/ecs_err.c  \
                    ecdsa/ecs_lib.c  \
@@ -352,7 +338,6 @@ local_src_files := constant_time_test.c  \
                    engine/eng_pkey.c  \
                    engine/eng_rdrand.c  \
                    engine/eng_table.c  \
-                   engine/enginetest.c  \
                    engine/tb_asnmth.c  \
                    engine/tb_cipher.c  \
                    engine/tb_dh.c  \
@@ -398,12 +383,10 @@ local_src_files := constant_time_test.c  \
                    evp/evp_cnf.c  \
                    evp/evp_enc.c  \
                    evp/evp_err.c  \
-                   evp/evp_extra_test.c  \
                    evp/evp_key.c  \
                    evp/evp_lib.c  \
                    evp/evp_pbe.c  \
                    evp/evp_pkey.c  \
-                   evp/evp_test.c  \
                    evp/m_dss.c  \
                    evp/m_dss1.c  \
                    evp/m_ecdsa.c  \
@@ -434,36 +417,28 @@ local_src_files := constant_time_test.c  \
                    hmac/hm_ameth.c  \
                    hmac/hm_pmeth.c  \
                    hmac/hmac.c  \
-                   hmac/hmactest.c  \
                    idea/i_cbc.c  \
                    idea/i_cfb64.c  \
                    idea/i_ecb.c  \
                    idea/i_ofb64.c  \
                    idea/i_skey.c  \
                    idea/idea_spd.c  \
-                   idea/ideatest.c  \
                    jpake/jpake.c  \
                    jpake/jpake_err.c  \
-                   jpake/jpaketest.c  \
                    krb5/krb5_asn.c  \
                    lhash/lh_stats.c  \
-                   lhash/lh_test.c  \
                    lhash/lhash.c  \
                    md2/md2.c  \
                    md2/md2_dgst.c  \
                    md2/md2_one.c  \
-                   md2/md2test.c  \
                    md4/md4.c  \
                    md4/md4_dgst.c  \
                    md4/md4_one.c  \
-                   md4/md4test.c  \
                    md5/md5.c  \
                    md5/md5_dgst.c  \
                    md5/md5_one.c  \
-                   md5/md5test.c  \
                    mdc2/mdc2_one.c  \
                    mdc2/mdc2dgst.c  \
-                   mdc2/mdc2test.c  \
                    modes/cbc128.c  \
                    modes/ccm128.c  \
                    modes/cfb128.c  \
@@ -524,7 +499,6 @@ local_src_files := constant_time_test.c  \
                    pkcs7/pk7_mime.c  \
                    pkcs7/pk7_smime.c  \
                    pkcs7/pkcs7err.c  \
-                   pqueue/pq_test.c  \
                    pqueue/pqueue.c  \
                    rand/md_rand.c  \
                    rand/rand_err.c  \
@@ -535,7 +509,6 @@ local_src_files := constant_time_test.c  \
                    rand/rand_vms.c  \
                    rand/rand_win.c  \
                    rand/randfile.c  \
-                   rand/randtest.c  \
                    rand/rand_egd.c  \
                    rc2/rc2_cbc.c  \
                    rc2/rc2_ecb.c  \
@@ -543,25 +516,21 @@ local_src_files := constant_time_test.c  \
                    rc2/rc2cfb64.c  \
                    rc2/rc2ofb64.c  \
                    rc2/rc2speed.c  \
-                   rc2/rc2test.c  \
                    rc2/tab.c  \
                    rc4/rc4.c  \
                    rc4/rc4_enc.c  \
                    rc4/rc4_skey.c  \
                    rc4/rc4_utl.c  \
                    rc4/rc4speed.c  \
-                   rc4/rc4test.c  \
                    rc5/rc5_ecb.c  \
                    rc5/rc5_enc.c  \
                    rc5/rc5_skey.c  \
                    rc5/rc5cfb64.c  \
                    rc5/rc5ofb64.c  \
                    rc5/rc5speed.c  \
-                   rc5/rc5test.c  \
                    ripemd/rmd160.c  \
                    ripemd/rmd_dgst.c  \
                    ripemd/rmd_one.c  \
-                   ripemd/rmdtest.c  \
                    rsa/rsa_ameth.c  \
                    rsa/rsa_asn1.c  \
                    rsa/rsa_chk.c  \
@@ -581,7 +550,6 @@ local_src_files := constant_time_test.c  \
                    rsa/rsa_saos.c  \
                    rsa/rsa_sign.c  \
                    rsa/rsa_ssl.c  \
-                   rsa/rsa_test.c  \
                    rsa/rsa_x931.c  \
                    seed/seed.c  \
                    seed/seed_cbc.c  \
@@ -592,23 +560,19 @@ local_src_files := constant_time_test.c  \
                    sha/sha1.c  \
                    sha/sha1_one.c  \
                    sha/sha1dgst.c  \
-                   sha/sha1test.c  \
                    sha/sha256.c  \
                    sha/sha256t.c  \
                    sha/sha512.c  \
                    sha/sha512t.c  \
                    sha/sha_dgst.c  \
                    sha/sha_one.c  \
-                   sha/shatest.c  \
                    srp/srp_lib.c  \
                    srp/srp_vfy.c  \
-                   srp/srptest.c  \
                    stack/stack.c  \
                    store/str_err.c  \
                    store/str_lib.c  \
                    store/str_mem.c  \
                    store/str_meth.c  \
-                   threads/mttest.c  \
                    threads/th-lock.c  \
                    ts/ts_asn1.c  \
                    ts/ts_conf.c  \
@@ -629,10 +593,8 @@ local_src_files := constant_time_test.c  \
                    ui/ui_util.c  \
                    whrlpool/wp_block.c  \
                    whrlpool/wp_dgst.c  \
-                   whrlpool/wp_test.c  \
                    x509/by_dir.c  \
                    x509/by_file.c  \
-                   x509/verify_extra_test.c  \
                    x509/x509_att.c  \
                    x509/x509_cmp.c  \
                    x509/x509_d2.c  \
@@ -661,7 +623,6 @@ local_src_files := constant_time_test.c  \
                    x509v3/pcy_map.c  \
                    x509v3/pcy_node.c  \
                    x509v3/pcy_tree.c  \
-                   x509v3/tabtest.c  \
                    x509v3/v3_addr.c  \
                    x509v3/v3_akey.c  \
                    x509v3/v3_akeya.c  \
@@ -694,18 +655,15 @@ local_src_files := constant_time_test.c  \
                    x509v3/v3_utl.c  \
                    x509v3/v3conf.c  \
                    x509v3/v3err.c  \
-                   x509v3/v3nametest.c  \
                    x509v3/v3prin.c  \
 
 
-
-
-
-local_c_include :=  $(NDK_PATH)/openssl \
-                    $(NDK_PATH)/openssl/openssl \
+local_c_include :=  $(NDK_PATH)/openssl/openssl \
+                    $(NDK_PATH)/openssl \
                     $(NDK_PATH)/openssl/crypto/asn1 \
                     $(NDK_PATH)/openssl/crypto/evp \
                     $(NDK_PATH)/openssl/crypto/aes \
+                    $(NDK_PATH)/openssl/crypto/bio \
 
 
 local_c_flags := -DNO_WINDOWS_BRAINDEATH

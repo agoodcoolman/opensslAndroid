@@ -66,9 +66,9 @@
 # ifndef OPENSSL_NO_STACK
 #  include "stack.h"
 # endif
-# include <evp.h>
-# include <x509.h>
-# include <pem2.h>
+# include "evp.h"
+# include "x509.h"
+# include "pem2.h"
 
 #ifdef  __cplusplus
 extern "C" {

@@ -87,7 +87,8 @@
 # include <errno.h>
 # include "cryptlib.h"
 # include "bio_lcl.h"
-# include <openssl/err.h>
+# include "../openssl/err.h"
+
 
 # if defined(OPENSSL_SYS_NETWARE) && defined(NETWARE_CLIB)
 #  include <nwfileio.h>

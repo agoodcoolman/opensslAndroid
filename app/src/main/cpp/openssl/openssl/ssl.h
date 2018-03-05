@@ -159,12 +159,11 @@
 #  include <lhash.h>
 #  include <buffer.h>
 # endif
-# include <pem.h>
-# include <hmac.h>
+# include "pem.h"
+# include "hmac.h"
 
-# include <./openssl/openssl/ssl.h>
-# include <safestack.h>
-# include <symhacks.h>
+# include "safestack.h"
+# include "symhacks.h"
 
 #ifdef  __cplusplus
 extern "C" {
@@ -1693,12 +1692,12 @@ struct ssl_st {
 }
 #endif
 
-# include <ssl2.h>
-# include <ssl3.h>
-# include <tls1.h>      /* This is mostly sslv3 with a few tweaks */
-# include <dtls1.h>     /* Datagram TLS */
-# include <./openssl/ssl/ssl23.h>
-# include <srtp.h>      /* Support for the use_srtp extension */
+# include "ssl2.h"
+# include "ssl3.h"
+# include "tls1.h"      /* This is mostly sslv3 with a few tweaks */
+# include "dtls1.h"    /* Datagram TLS */
+# include "ssl23.h"
+# include "srtp.h"      /* Support for the use_srtp extension */
 
 #ifdef  __cplusplus
 extern "C" {

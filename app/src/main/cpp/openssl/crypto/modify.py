@@ -21,7 +21,7 @@ def modify2(file):
     with open(file, r'w') as f_w:
         for line in lines:
             if re.match(r'#include\s*(\<)openssl', line):
-                            line = re.sub(r'#include\s*(\<)openssl', '#include \"../../openssl', line)
+                            line = re.sub(r'#\s*include\s*(\<)openssl', '#include \"../../openssl', line)
                             line = line.replace('>', '\"')
 
             f_w.write(line)
