@@ -58,6 +58,7 @@
 
 #include <stdio.h>
 #include "../../openssl/conf.h"
+#include "../../openssl/lhash.h"
 
 static void print_conf(CONF_VALUE *cv);
 static IMPLEMENT_LHASH_DOALL_FN(print_conf, CONF_VALUE *);

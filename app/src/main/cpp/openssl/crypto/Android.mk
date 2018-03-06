@@ -11,8 +11,6 @@ local_src_files := cversion.c  \
                    o_init.c  \
                    o_str.c  \
                    o_time.c  \
-                   ppccap.c  \
-                   s390xcap.c  \
                    uid.c  \
                    cpt_err.c  \
                    cryptlib.c  \
@@ -22,14 +20,12 @@ local_src_files := cversion.c  \
                    o_dir.c  \
                    aes/aes_cbc.c  \
                    aes/aes_cfb.c  \
-                   aes/aes_core.c  \
                    aes/aes_ctr.c  \
                    aes/aes_ecb.c  \
                    aes/aes_ige.c  \
                    aes/aes_misc.c  \
                    aes/aes_ofb.c  \
                    aes/aes_wrap.c  \
-                   aes/aes_x86core.c  \
                    asn1/a_bitstr.c  \
                    asn1/a_bool.c  \
                    asn1/a_bytes.c  \
@@ -107,7 +103,6 @@ local_src_files := cversion.c  \
                    asn1/x_val.c  \
                    asn1/x_x509.c  \
                    asn1/x_x509a.c  \
-                   bf/bf_cbc.c  \
                    bf/bf_cfb64.c  \
                    bf/bf_ecb.c  \
                    bf/bf_enc.c  \
@@ -117,7 +112,6 @@ local_src_files := cversion.c  \
                    bio/b_print.c  \
                    bio/b_sock.c  \
                    bio/bf_buff.c  \
-                   bio/bf_lbuf.c  \
                    bio/bf_nbio.c  \
                    bio/bf_null.c  \
                    bio/bio_cb.c  \
@@ -161,9 +155,6 @@ local_src_files := cversion.c  \
                    bn/bn_sqrt.c  \
                    bn/bn_word.c  \
                    bn/bn_x931p.c  \
-                   bn/bnspeed.c  \
-                   bn/expspeed.c  \
-                   bn/rsaz_exp.c  \
                    buffer/buf_err.c  \
                    buffer/buf_str.c  \
                    buffer/buffer.c  \
@@ -174,7 +165,6 @@ local_src_files := cversion.c  \
                    comp/c_zlib.c  \
                    comp/comp_err.c  \
                    comp/comp_lib.c  \
-                   conf/cnf_save.c  \
                    conf/conf_api.c  \
                    conf/conf_def.c  \
                    conf/conf_err.c  \
@@ -182,17 +172,14 @@ local_src_files := cversion.c  \
                    conf/conf_mall.c  \
                    conf/conf_mod.c  \
                    conf/conf_sap.c  \
-                   des/cbc3_enc.c  \
                    des/cbc_cksm.c  \
                    des/cbc_enc.c  \
                    des/cfb64ede.c  \
                    des/cfb64enc.c  \
                    des/cfb_enc.c  \
-                   des/des.c  \
                    des/des_enc.c  \
                    des/des_old.c  \
                    des/des_old2.c  \
-                   des/des_opts.c  \
                    des/ecb3_enc.c  \
                    des/ecb_enc.c  \
                    des/ede_cbcm_enc.c  \
@@ -200,7 +187,6 @@ local_src_files := cversion.c  \
                    des/enc_writ.c  \
                    des/fcrypt.c  \
                    des/fcrypt_b.c  \
-                   des/ncbc_enc.c  \
                    des/ofb64ede.c  \
                    des/ofb64enc.c  \
                    des/ofb_enc.c  \
@@ -208,11 +194,8 @@ local_src_files := cversion.c  \
                    des/qud_cksm.c  \
                    des/rand_key.c  \
                    des/read2pwd.c  \
-                   des/read_pwd.c  \
                    des/rpc_enc.c  \
-                   des/rpw.c  \
                    des/set_key.c  \
-                   des/speed.c  \
                    des/str2key.c  \
                    des/xcbc_enc.c  \
                    dh/dh_ameth.c  \
@@ -221,15 +204,10 @@ local_src_files := cversion.c  \
                    dh/dh_depr.c  \
                    dh/dh_err.c  \
                    dh/dh_gen.c  \
-                   dh/dh_kdf.c  \
                    dh/dh_key.c  \
                    dh/dh_lib.c  \
                    dh/dh_pmeth.c  \
                    dh/dh_prn.c  \
-                   dh/dh_rfc5114.c  \
-                   dh/p1024.c  \
-                   dh/p192.c  \
-                   dh/p512.c  \
                    dsa/dsa_ameth.c  \
                    dsa/dsa_asn1.c  \
                    dsa/dsa_depr.c  \
@@ -242,7 +220,6 @@ local_src_files := cversion.c  \
                    dsa/dsa_prn.c  \
                    dsa/dsa_sign.c  \
                    dsa/dsa_vrf.c  \
-                   dsa/dsagen.c  \
                    dso/dso_beos.c  \
                    dso/dso_dl.c  \
                    dso/dso_dlfcn.c  \
@@ -274,12 +251,9 @@ local_src_files := cversion.c  \
                    ec/ecp_nistp256.c  \
                    ec/ecp_nistp521.c  \
                    ec/ecp_nistputil.c  \
-                   ec/ecp_nistz256.c  \
-                   ec/ecp_nistz256_table.c  \
                    ec/ecp_oct.c  \
                    ec/ecp_smpl.c  \
                    ecdh/ech_err.c  \
-                   ecdh/ech_kdf.c  \
                    ecdh/ech_key.c  \
                    ecdh/ech_lib.c  \
                    ecdh/ech_ossl.c  \
@@ -289,31 +263,6 @@ local_src_files := cversion.c  \
                    ecdsa/ecs_ossl.c  \
                    ecdsa/ecs_sign.c  \
                    ecdsa/ecs_vrf.c  \
-                   engine/eng_all.c  \
-                   engine/eng_cnf.c  \
-                   engine/eng_cryptodev.c  \
-                   engine/eng_ctrl.c  \
-                   engine/eng_dyn.c  \
-                   engine/eng_err.c  \
-                   engine/eng_fat.c  \
-                   engine/eng_init.c  \
-                   engine/eng_lib.c  \
-                   engine/eng_list.c  \
-                   engine/eng_openssl.c  \
-                   engine/eng_pkey.c  \
-                   engine/eng_rdrand.c  \
-                   engine/eng_table.c  \
-                   engine/tb_asnmth.c  \
-                   engine/tb_cipher.c  \
-                   engine/tb_dh.c  \
-                   engine/tb_digest.c  \
-                   engine/tb_dsa.c  \
-                   engine/tb_ecdh.c  \
-                   engine/tb_ecdsa.c  \
-                   engine/tb_pkmeth.c  \
-                   engine/tb_rand.c  \
-                   engine/tb_rsa.c  \
-                   engine/tb_store.c  \
                    err/err.c  \
                    err/err_all.c  \
                    err/err_prn.c  \
@@ -327,13 +276,11 @@ local_src_files := cversion.c  \
                    evp/digest.c  \
                    evp/e_aes.c  \
                    evp/e_aes_cbc_hmac_sha1.c  \
-                   evp/e_aes_cbc_hmac_sha256.c  \
                    evp/e_bf.c  \
                    evp/e_camellia.c  \
                    evp/e_cast.c  \
                    evp/e_des.c  \
                    evp/e_des3.c  \
-                   evp/e_dsa.c  \
                    evp/e_idea.c  \
                    evp/e_null.c  \
                    evp/e_old.c  \
@@ -345,7 +292,6 @@ local_src_files := cversion.c  \
                    evp/e_xcbc_d.c  \
                    evp/encode.c  \
                    evp/evp_acnf.c  \
-                   evp/evp_cnf.c  \
                    evp/evp_enc.c  \
                    evp/evp_err.c  \
                    evp/evp_key.c  \
@@ -366,7 +312,6 @@ local_src_files := cversion.c  \
                    evp/m_sigver.c  \
                    evp/m_wp.c  \
                    evp/names.c  \
-                   evp/openbsd_hw.c  \
                    evp/p5_crpt.c  \
                    evp/p5_crpt2.c  \
                    evp/p_dec.c  \
@@ -382,28 +327,13 @@ local_src_files := cversion.c  \
                    hmac/hm_ameth.c  \
                    hmac/hm_pmeth.c  \
                    hmac/hmac.c  \
-                   idea/i_cbc.c  \
-                   idea/i_cfb64.c  \
-                   idea/i_ecb.c  \
-                   idea/i_ofb64.c  \
-                   idea/i_skey.c  \
-                   idea/idea_spd.c  \
-                   jpake/jpake.c  \
-                   jpake/jpake_err.c  \
                    krb5/krb5_asn.c  \
                    lhash/lh_stats.c  \
                    lhash/lhash.c  \
-                   md2/md2.c  \
-                   md2/md2_dgst.c  \
-                   md2/md2_one.c  \
-                   md4/md4.c  \
                    md4/md4_dgst.c  \
                    md4/md4_one.c  \
-                   md5/md5.c  \
                    md5/md5_dgst.c  \
                    md5/md5_one.c  \
-                   mdc2/mdc2_one.c  \
-                   mdc2/mdc2dgst.c  \
                    modes/cbc128.c  \
                    modes/ccm128.c  \
                    modes/cfb128.c  \
@@ -411,7 +341,6 @@ local_src_files := cversion.c  \
                    modes/cts128.c  \
                    modes/gcm128.c  \
                    modes/ofb128.c  \
-                   modes/wrap128.c  \
                    modes/xts128.c  \
                    objects/o_names.c  \
                    objects/obj_dat.c  \
@@ -457,10 +386,7 @@ local_src_files := cversion.c  \
                    pkcs7/bio_pk7.c  \
                    pkcs7/pk7_asn1.c  \
                    pkcs7/pk7_attr.c  \
-                   pkcs7/pk7_dgst.c  \
                    pkcs7/pk7_doit.c  \
-                   pkcs7/pk7_enc.c  \
-                   pkcs7/pk7_lib.c  \
                    pkcs7/pk7_mime.c  \
                    pkcs7/pk7_smime.c  \
                    pkcs7/pkcs7err.c  \
@@ -468,11 +394,7 @@ local_src_files := cversion.c  \
                    rand/md_rand.c  \
                    rand/rand_err.c  \
                    rand/rand_lib.c  \
-                   rand/rand_nw.c  \
-                   rand/rand_os2.c  \
                    rand/rand_unix.c  \
-                   rand/rand_vms.c  \
-                   rand/rand_win.c  \
                    rand/randfile.c  \
                    rand/rand_egd.c  \
                    rc2/rc2_cbc.c  \
@@ -480,20 +402,9 @@ local_src_files := cversion.c  \
                    rc2/rc2_skey.c  \
                    rc2/rc2cfb64.c  \
                    rc2/rc2ofb64.c  \
-                   rc2/rc2speed.c  \
-                   rc2/tab.c  \
-                   rc4/rc4.c  \
                    rc4/rc4_enc.c  \
                    rc4/rc4_skey.c  \
                    rc4/rc4_utl.c  \
-                   rc4/rc4speed.c  \
-                   rc5/rc5_ecb.c  \
-                   rc5/rc5_enc.c  \
-                   rc5/rc5_skey.c  \
-                   rc5/rc5cfb64.c  \
-                   rc5/rc5ofb64.c  \
-                   rc5/rc5speed.c  \
-                   ripemd/rmd160.c  \
                    ripemd/rmd_dgst.c  \
                    ripemd/rmd_one.c  \
                    rsa/rsa_ameth.c  \
@@ -516,48 +427,22 @@ local_src_files := cversion.c  \
                    rsa/rsa_sign.c  \
                    rsa/rsa_ssl.c  \
                    rsa/rsa_x931.c  \
-                   seed/seed.c  \
-                   seed/seed_cbc.c  \
-                   seed/seed_cfb.c  \
-                   seed/seed_ecb.c  \
-                   seed/seed_ofb.c  \
-                   sha/sha.c  \
-                   sha/sha1.c  \
                    sha/sha1_one.c  \
                    sha/sha1dgst.c  \
                    sha/sha256.c  \
-                   sha/sha256t.c  \
                    sha/sha512.c  \
-                   sha/sha512t.c  \
                    sha/sha_dgst.c  \
                    sha/sha_one.c  \
                    srp/srp_lib.c  \
                    srp/srp_vfy.c  \
                    stack/stack.c  \
-                   store/str_err.c  \
-                   store/str_lib.c  \
-                   store/str_mem.c  \
-                   store/str_meth.c  \
-                   threads/th-lock.c  \
-                   ts/ts_asn1.c  \
-                   ts/ts_conf.c  \
                    ts/ts_err.c  \
-                   ts/ts_lib.c  \
-                   ts/ts_req_print.c  \
-                   ts/ts_req_utils.c  \
-                   ts/ts_rsp_print.c  \
-                   ts/ts_rsp_sign.c  \
-                   ts/ts_rsp_utils.c  \
-                   ts/ts_rsp_verify.c  \
-                   ts/ts_verify_ctx.c  \
                    txt_db/txt_db.c  \
                    ui/ui_compat.c  \
                    ui/ui_err.c  \
                    ui/ui_lib.c  \
                    ui/ui_openssl.c  \
                    ui/ui_util.c  \
-                   whrlpool/wp_block.c  \
-                   whrlpool/wp_dgst.c  \
                    x509/by_dir.c  \
                    x509/by_file.c  \
                    x509/x509_att.c  \
@@ -614,13 +499,11 @@ local_src_files := cversion.c  \
                    x509v3/v3_pmaps.c  \
                    x509v3/v3_prn.c  \
                    x509v3/v3_purp.c  \
-                   x509v3/v3_scts.c  \
                    x509v3/v3_skey.c  \
                    x509v3/v3_sxnet.c  \
                    x509v3/v3_utl.c  \
-                   x509v3/v3conf.c  \
                    x509v3/v3err.c  \
-                   x509v3/v3prin.c  \
+
 
 
 local_c_include :=  $(NDK_PATH)/openssl/openssl \

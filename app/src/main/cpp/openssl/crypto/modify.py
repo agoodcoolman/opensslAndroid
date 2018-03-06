@@ -37,6 +37,19 @@ def modify4(file):
                     line.replace('>', '\"')
             f_w.write(line)
 
+def modify5(file):
+
+    with open(file, 'r') as f:
+        lines = f.readlines()
+    #写的方式打开文件
+    with open(file, 'w') as f_w:
+        for line in lines:
+            results = re.compile(r'\s*(.*)\s*').findall(line)
+            for result in results:
+                if result != '':
+                    line = "\'" + result + "\',"
+            f_w.write(line)
+
 def modify2(file):
 
     with open(file, 'r') as f:
@@ -83,11 +96,13 @@ def modify(file):
     finally:
         file_object1.close()
 
-file_h_list(os.getcwd() + "/../openssl")
-file_name(os.getcwd())
+#file_h_list(os.getcwd() + "/../openssl")
+#file_name(os.getcwd())
 #modify4(os.getcwd() + "/bf/bf_cbc.c")
+modify5(os.getcwd() + "/modifymakefile.py")
+#print re.compile(r'\s*(.*)\n').findall('                   cversion.c')
 # 找到过滤出来最后一个.h文件的名字
-#print re.compile(r'[^/]+(?!.*/)(?=>)').findall('#include <../openssl/bf_locl.h>')
+# print re.compile(r'[^/]+(?!.*/)(?=>)').findall('#include <../openssl/bf_locl.h>')
 # 这个是找到单独的opensll里面的引入的.h文件
 #print re.compile(r'#\s*include\s*[<|\"](.*)[<|\"]').findall('#include \"../openssl/bf_locl.h\"')
 #print re.sub(r'#\s*include\s*(<)', '\"', '#include <../openssl/bf_locl.h>')

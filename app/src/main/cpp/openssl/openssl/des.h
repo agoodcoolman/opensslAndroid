@@ -99,7 +99,7 @@ typedef struct DES_ks {
 # endif
 
 # ifdef OPENSSL_ENABLE_OLD_DES_SUPPORT
-#  include <../crypto/des/des_old.h>
+#  include "des_old.h"
 # endif
 
 # define DES_KEY_SZ      (sizeof(DES_cblock))
