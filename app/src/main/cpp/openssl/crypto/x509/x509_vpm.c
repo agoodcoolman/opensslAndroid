@@ -59,14 +59,14 @@
 
 #include <stdio.h>
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/crypto.h"
 #include "../../openssl/lhash.h"
 #include "../../openssl/buffer.h"
 #include "../../openssl/x509.h"
 #include "../../openssl/x509v3.h"
 
-#include "vpm_int.h"
+# include "../openssl/vpm_int.h"
 
 /* X509_VERIFY_PARAM functions */
 

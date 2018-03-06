@@ -52,14 +52,14 @@
  * ====================================================================
  */
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/asn1t.h"
 #include "../../openssl/pem.h"
 #include "../../openssl/x509v3.h"
 #include "../../openssl/err.h"
 #include "../../openssl/cms.h"
 #include "../../openssl/rand.h"
-#include "cms_lcl.h"
+# include "../openssl/cms_lcl.h"
 
 /* CMS EncryptedData Utilities */
 

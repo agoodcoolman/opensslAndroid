@@ -72,7 +72,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #ifdef FLAT_INC
-# include "e_os.h"
+# include "../openssl/e_os.h"
 #else
 # include "../e_os.h"
 #endif

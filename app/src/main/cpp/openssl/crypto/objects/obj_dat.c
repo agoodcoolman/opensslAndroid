@@ -59,7 +59,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <limits.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/lhash.h"
 #include "../../openssl/asn1.h"
 #include "../../openssl/objects.h"
@@ -67,7 +67,7 @@
 
 /* obj_dat.h is generated from objects.h by obj_dat.pl */
 #ifndef OPENSSL_NO_OBJECT
-# include "obj_dat.h"
+# include "../openssl/obj_dat.h"
 #else
 /* You will have to load all the objects needed manually in the application */
 # define NUM_NID 0

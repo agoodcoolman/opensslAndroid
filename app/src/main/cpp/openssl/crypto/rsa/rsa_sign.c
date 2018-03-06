@@ -57,12 +57,12 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/bn.h"
 #include "../../openssl/rsa.h"
 #include "../../openssl/objects.h"
 #include "../../openssl/x509.h"
-#include "rsa_locl.h"
+# include "../openssl/rsa_locl.h"
 
 /* Size of an SSL signature: MD5+SHA1 */
 #define SSL_SIG_LENGTH  36

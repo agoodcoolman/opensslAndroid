@@ -66,7 +66,7 @@
 #include "../../openssl/err.h"
 #include "../../openssl/opensslv.h"
 
-#include "ec_lcl.h"
+# include "../openssl/ec_lcl.h"
 
 const char EC_version[] = "EC" OPENSSL_VERSION_PTEXT;
 

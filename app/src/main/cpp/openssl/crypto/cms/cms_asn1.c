@@ -55,8 +55,8 @@
 #include "../../openssl/asn1t.h"
 #include "../../openssl/pem.h"
 #include "../../openssl/x509v3.h"
-#include "cms.h"
-#include "cms_lcl.h"
+# include "../openssl/cms.h"
+# include "../openssl/cms_lcl.h"
 
 
 ASN1_SEQUENCE(CMS_IssuerAndSerialNumber) = {

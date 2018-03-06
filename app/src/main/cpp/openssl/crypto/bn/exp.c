@@ -1,8 +1,8 @@
 /* unused */
 
 #include <stdio.h>
-#include "../../openssl/tmdiff.h"
-#include "bn_lcl.h"
+#include "../openssl/tmdiff.h"
+# include "../openssl/bn_lcl.h"
 
 #define SIZE    256
 #define NUM     (8*8*8)

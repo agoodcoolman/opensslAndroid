@@ -58,12 +58,12 @@
  */
 
 #include <string.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/e_os2.h"
 #include "../../openssl/buffer.h"
 #include "../../openssl/ui.h"
 #include "../../openssl/err.h"
-#include "ui_locl.h"
+# include "../openssl/ui_locl.h"
 
 IMPLEMENT_STACK_OF(UI_STRING_ST)
 

@@ -53,7 +53,7 @@
  *
  */
 
-#include "ecs_locl.h"
+# include "../openssl/ecs_locl.h"
 #ifndef OPENSSL_NO_ENGINE
 #include "../../openssl/engine.h"
 #endif

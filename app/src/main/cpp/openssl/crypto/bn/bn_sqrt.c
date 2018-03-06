@@ -57,8 +57,8 @@
  *
  */
 
-#include "cryptlib.h"
-#include "bn_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/bn_lcl.h"
 
 BIGNUM *BN_mod_sqrt(BIGNUM *in, const BIGNUM *a, const BIGNUM *p, BN_CTX *ctx)
 /*

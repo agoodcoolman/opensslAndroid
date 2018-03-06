@@ -58,8 +58,8 @@
  *
  */
 #ifndef OPENSSL_NO_SRP
-# include "cryptlib.h"
-# include "srp_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/srp_lcl.h"
 #include "../../openssl/srp.h"
 #include "../../openssl/evp.h"
 #include "../../openssl/buffer.h"

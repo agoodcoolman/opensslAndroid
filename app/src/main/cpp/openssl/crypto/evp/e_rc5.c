@@ -57,13 +57,13 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 
 #ifndef OPENSSL_NO_RC5
 
 #include "../../openssl/evp.h"
 #include "../../openssl/objects.h"
-# include "evp_locl.h"
+# include "../openssl/evp_locl.h"
 #include "../../openssl/rc5.h"
 
 static int r_32_12_16_init_key(EVP_CIPHER_CTX *ctx, const unsigned char *key,

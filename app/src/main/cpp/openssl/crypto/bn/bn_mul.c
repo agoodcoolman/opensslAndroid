@@ -63,8 +63,8 @@
 
 #include <stdio.h>
 #include <assert.h>
-#include "cryptlib.h"
-#include "bn_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/bn_lcl.h"
 
 #if defined(OPENSSL_NO_ASM) || !defined(OPENSSL_BN_ASM_PART_WORDS)
 /*

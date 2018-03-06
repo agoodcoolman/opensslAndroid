@@ -57,7 +57,7 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 
 #ifndef OPENSSL_NO_MD2
 

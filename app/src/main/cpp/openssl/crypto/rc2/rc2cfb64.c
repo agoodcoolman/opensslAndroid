@@ -57,7 +57,7 @@
  */
 
 #include "../../openssl/rc2.h"
-#include "rc2_locl.h"
+# include "../openssl/rc2_locl.h"
 
 /*
  * The input and output encrypted as though 64bit cfb mode is being used.

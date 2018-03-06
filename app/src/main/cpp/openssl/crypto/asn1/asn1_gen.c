@@ -57,7 +57,7 @@
  *
  */
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/asn1.h"
 #include "../../openssl/x509v3.h"
 

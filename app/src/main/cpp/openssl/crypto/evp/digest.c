@@ -110,7 +110,7 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/objects.h"
 #include "../../openssl/evp.h"
 #ifndef OPENSSL_NO_ENGINE
@@ -119,7 +119,7 @@
 
 #ifdef OPENSSL_FIPS
 #include "../../openssl/fips.h"
-# include "evp_locl.h"
+# include "../openssl/evp_locl.h"
 #endif
 
 void EVP_MD_CTX_init(EVP_MD_CTX *ctx)

@@ -56,9 +56,9 @@
  * [including the GNU Public Licence.]
  */
 
-#include "rpc_des.h"
-#include "des_locl.h"
-#include "des_ver.h"
+# include "../openssl/rpc_des.h"
+# include "../openssl/des_locl.h"
+# include "../openssl/des_ver.h"
 
 int _des_crypt(char *buf, int len, struct desparams *desp);
 int _des_crypt(char *buf, int len, struct desparams *desp)

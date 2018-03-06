@@ -57,8 +57,8 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include "bn_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/bn_lcl.h"
 
 /* r must not be a */
 /*

@@ -52,10 +52,10 @@
  *
  */
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/evp.h"
 #include "../../openssl/lhash.h"
-#include "eng_int.h"
+# include "../openssl/eng_int.h"
 
 /* The type of the items in the table */
 typedef struct st_engine_pile {

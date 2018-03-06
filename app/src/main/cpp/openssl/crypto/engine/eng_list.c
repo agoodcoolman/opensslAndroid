@@ -62,7 +62,7 @@
  * SUN MICROSYSTEMS, INC., and contributed to the OpenSSL project.
  */
 
-#include "eng_int.h"
+# include "../openssl/eng_int.h"
 
 /*
  * The linked-list of pointers to engine types. engine_list_head incorporates

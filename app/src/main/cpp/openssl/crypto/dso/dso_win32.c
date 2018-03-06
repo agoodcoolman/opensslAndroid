@@ -59,7 +59,7 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/dso.h"
 
 #if !defined(DSO_WIN32)

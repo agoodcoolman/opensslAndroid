@@ -78,12 +78,12 @@
 #ifndef OPENSSL_NO_SHA
 
 # include <stdio.h>
-# include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/evp.h"
 #include "../../openssl/bn.h"
 #include "../../openssl/rand.h"
 #include "../../openssl/sha.h"
-# include "dsa_locl.h"
+# include "../openssl/dsa_locl.h"
 
 # ifdef OPENSSL_FIPS
 /* Workaround bug in prototype */

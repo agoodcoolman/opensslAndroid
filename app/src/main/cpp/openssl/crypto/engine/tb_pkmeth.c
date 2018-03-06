@@ -52,7 +52,7 @@
  *
  */
 
-#include "eng_int.h"
+# include "../openssl/eng_int.h"
 #include "../../openssl/evp.h"
 
 /*

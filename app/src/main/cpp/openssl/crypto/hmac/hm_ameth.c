@@ -57,9 +57,9 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/evp.h"
-#include "asn1_locl.h"
+# include "../openssl/asn1_locl.h"
 
 #define HMAC_TEST_PRIVATE_KEY_FORMAT
 

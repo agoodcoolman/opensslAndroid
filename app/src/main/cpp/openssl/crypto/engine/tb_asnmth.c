@@ -52,8 +52,8 @@
  *
  */
 
-#include "eng_int.h"
-#include "asn1_locl.h"
+# include "../openssl/eng_int.h"
+# include "../openssl/asn1_locl.h"
 #include "../../openssl/evp.h"
 
 /*

@@ -67,7 +67,7 @@
  *
  */
 
-#include "ech_locl.h"
+# include "../openssl/ech_locl.h"
 #include <string.h>
 #ifndef OPENSSL_NO_ENGINE
 #include "../../openssl/engine.h"

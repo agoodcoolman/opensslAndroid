@@ -66,7 +66,7 @@
 #include "../../openssl/err.h"
 #include "../../openssl/opensslv.h"
 
-#include "ec_lcl.h"
+# include "../openssl/ec_lcl.h"
 
 int EC_POINT_set_compressed_coordinates_GFp(const EC_GROUP *group,
                                             EC_POINT *point, const BIGNUM *x,

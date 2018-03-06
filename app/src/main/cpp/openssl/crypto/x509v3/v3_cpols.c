@@ -58,13 +58,13 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/conf.h"
 #include "../../openssl/asn1.h"
 #include "../../openssl/asn1t.h"
 #include "../../openssl/x509v3.h"
 
-#include "pcy_int.h"
+# include "../openssl/pcy_int.h"
 
 /* Certificate policies extension support: this one is a bit complex... */
 

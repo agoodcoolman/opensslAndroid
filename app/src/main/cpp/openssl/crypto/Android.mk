@@ -112,9 +112,7 @@ local_src_files := cversion.c  \
                    bf/bf_ecb.c  \
                    bf/bf_enc.c  \
                    bf/bf_ofb64.c  \
-                   bf/bf_opts.c  \
                    bf/bf_skey.c  \
-                   bf/bfspeed.c  \
                    bio/b_dump.c  \
                    bio/b_print.c  \
                    bio/b_sock.c  \
@@ -134,7 +132,6 @@ local_src_files := cversion.c  \
                    bio/bss_log.c  \
                    bio/bss_mem.c  \
                    bio/bss_null.c  \
-                   bio/bss_rtcp.c  \
                    bio/bss_sock.c  \
                    bn/bn_add.c  \
                    bn/bn_asm.c  \
@@ -165,46 +162,14 @@ local_src_files := cversion.c  \
                    bn/bn_word.c  \
                    bn/bn_x931p.c  \
                    bn/bnspeed.c  \
-                   bn/exp.c  \
                    bn/expspeed.c  \
                    bn/rsaz_exp.c  \
-                   bn/vms-helper.c  \
-                   bn/asm/x86_64-gcc.c  \
                    buffer/buf_err.c  \
                    buffer/buf_str.c  \
                    buffer/buffer.c  \
-                   camellia/camellia.c  \
-                   camellia/cmll_cbc.c  \
-                   camellia/cmll_cfb.c  \
-                   camellia/cmll_ctr.c  \
-                   camellia/cmll_ecb.c  \
-                   camellia/cmll_misc.c  \
-                   camellia/cmll_ofb.c  \
-                   camellia/cmll_utl.c  \
-                   cast/c_cfb64.c  \
-                   cast/c_ecb.c  \
-                   cast/c_enc.c  \
-                   cast/c_ofb64.c  \
-                   cast/c_skey.c  \
-                   cast/cast_spd.c  \
-                   cast/castopts.c  \
                    cmac/cm_ameth.c  \
                    cmac/cm_pmeth.c  \
                    cmac/cmac.c  \
-                   cms/cms_asn1.c  \
-                   cms/cms_att.c  \
-                   cms/cms_cd.c  \
-                   cms/cms_dd.c  \
-                   cms/cms_enc.c  \
-                   cms/cms_env.c  \
-                   cms/cms_err.c  \
-                   cms/cms_ess.c  \
-                   cms/cms_io.c  \
-                   cms/cms_kari.c  \
-                   cms/cms_lib.c  \
-                   cms/cms_pwri.c  \
-                   cms/cms_sd.c  \
-                   cms/cms_smime.c  \
                    comp/c_rle.c  \
                    comp/c_zlib.c  \
                    comp/comp_err.c  \

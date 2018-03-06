@@ -17,11 +17,11 @@
  * one-wayness.  For the RSA function, this is an equivalent notion.
  */
 
-#include "constant_time_locl.h"
+# include "../openssl/constant_time_locl.h"
 
 #if !defined(OPENSSL_NO_SHA) && !defined(OPENSSL_NO_SHA1)
 # include <stdio.h>
-# include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/bn.h"
 #include "../../openssl/rsa.h"
 #include "../../openssl/evp.h"

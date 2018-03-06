@@ -54,8 +54,8 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include "bn_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/bn_lcl.h"
 
 bn_div_words_abort(int i)
 {

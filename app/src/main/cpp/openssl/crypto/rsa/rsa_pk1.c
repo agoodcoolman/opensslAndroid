@@ -56,10 +56,10 @@
  * [including the GNU Public Licence.]
  */
 
-#include "constant_time_locl.h"
+# include "../openssl/constant_time_locl.h"
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/bn.h"
 #include "../../openssl/rsa.h"
 #include "../../openssl/rand.h"

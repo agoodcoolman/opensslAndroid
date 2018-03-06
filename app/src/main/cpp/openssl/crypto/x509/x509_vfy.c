@@ -60,7 +60,7 @@
 #include <time.h>
 #include <errno.h>
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/crypto.h"
 #include "../../openssl/lhash.h"
 #include "../../openssl/buffer.h"
@@ -69,7 +69,7 @@
 #include "../../openssl/x509.h"
 #include "../../openssl/x509v3.h"
 #include "../../openssl/objects.h"
-#include "vpm_int.h"
+# include "../openssl/vpm_int.h"
 
 /* CRL score values */
 

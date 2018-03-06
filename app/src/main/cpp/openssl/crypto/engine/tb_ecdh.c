@@ -67,7 +67,7 @@
  *
  */
 
-#include "eng_int.h"
+# include "../openssl/eng_int.h"
 
 /*
  * If this symbol is defined then ENGINE_get_default_ECDH(), the function

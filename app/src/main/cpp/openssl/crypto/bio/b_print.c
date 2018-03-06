@@ -72,7 +72,7 @@
 #include <ctype.h>
 #include <assert.h>
 #include <limits.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #ifndef NO_SYS_TYPES_H
 # include <sys/types.h>
 #endif

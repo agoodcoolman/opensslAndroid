@@ -56,7 +56,7 @@
  * [including the GNU Public Licence.]
  */
 
-#include "e_os.h"
+# include "../openssl/e_os.h"
 
 #ifdef OPENSSL_SYS_WIN32
 # include <stdlib.h>

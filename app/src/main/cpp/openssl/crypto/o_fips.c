@@ -56,7 +56,7 @@
  *
  */
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #ifdef OPENSSL_FIPS
 #include "../../openssl/fips.h"
 #include "../../openssl/fips_rand.h"

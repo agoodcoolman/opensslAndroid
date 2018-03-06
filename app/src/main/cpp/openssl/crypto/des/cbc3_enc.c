@@ -56,7 +56,7 @@
  * [including the GNU Public Licence.]
  */
 
-#include "des_locl.h"
+# include "../openssl/des_locl.h"
 
 /* HAS BUGS! DON'T USE - this is only present for use in des.c */
 void DES_3cbc_encrypt(DES_cblock *input, DES_cblock *output, long length,

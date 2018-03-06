@@ -56,8 +56,8 @@
 # include <string.h>
 # include <assert.h>
 #include "../../openssl/aes.h"
-# include "evp_locl.h"
-# include "modes_lcl.h"
+# include "../openssl/evp_locl.h"
+# include "../openssl/modes_lcl.h"
 #include "../../openssl/rand.h"
 
 # undef EVP_CIPH_FLAG_FIPS
@@ -164,7 +164,7 @@ void AES_xts_decrypt(const unsigned char *inp, unsigned char *out, size_t len,
 # endif
 
 # if     defined(OPENSSL_CPUID_OBJ) && (defined(__powerpc__) || defined(__ppc__) || defined(_ARCH_PPC))
-#  include "ppc_arch.h"
+# include "../openssl/ppc_arch.h"
 #  ifdef VPAES_ASM
 #   define VPAES_CAPABLE (OPENSSL_ppccap_P & PPC_ALTIVEC)
 #  endif
@@ -483,7 +483,7 @@ const EVP_CIPHER *EVP_aes_##keylen##_##mode(void) \
 
 # elif   defined(AES_ASM) && (defined(__sparc) || defined(__sparc__))
 
-#  include "sparc_arch.h"
+# include "../openssl/sparc_arch.h"
 
 extern unsigned int OPENSSL_sparcv9cap_P[];
 
@@ -879,7 +879,7 @@ const EVP_CIPHER *EVP_aes_##keylen##_##mode(void) \
 # endif
 
 # if defined(OPENSSL_CPUID_OBJ) && (defined(__arm__) || defined(__arm) || defined(__aarch64__))
-#  include "arm_arch.h"
+# include "../openssl/arm_arch.h"
 #  if __ARM_MAX_ARCH__>=7
 #   if defined(BSAES_ASM)
 #    define BSAES_CAPABLE (OPENSSL_armcap_P & ARMV7_NEON)

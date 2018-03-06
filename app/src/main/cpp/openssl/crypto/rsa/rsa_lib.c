@@ -58,7 +58,7 @@
 
 #include <stdio.h>
 #include "../../openssl/crypto.h"
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/lhash.h"
 #include "../../openssl/bn.h"
 #include "../../openssl/rsa.h"

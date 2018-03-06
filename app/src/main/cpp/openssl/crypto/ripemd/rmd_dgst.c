@@ -57,7 +57,7 @@
  */
 
 #include <stdio.h>
-#include "rmd_locl.h"
+# include "../openssl/rmd_locl.h"
 #include "../../openssl/opensslv.h"
 #include "../../openssl/crypto.h"
 

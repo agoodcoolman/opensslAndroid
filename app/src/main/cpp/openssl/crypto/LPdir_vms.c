@@ -39,7 +39,7 @@
 #ifndef LPDIR_H
 # include "LPdir.h"
 #endif
-#include "vms_rms.h"
+# include "../openssl/vms_rms.h"
 
 /* Some compiler options hide EVMSERR. */
 #ifndef EVMSERR

@@ -58,7 +58,7 @@
  */
 
 #include "../../openssl/objects.h"
-#include "obj_xref.h"
+# include "../openssl/obj_xref.h"
 
 DECLARE_STACK_OF(nid_triple)
 STACK_OF(nid_triple) *sig_app, *sigx_app;

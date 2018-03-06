@@ -53,7 +53,7 @@
  *
  */
 
-#include "eng_int.h"
+# include "../openssl/eng_int.h"
 
 /*
  * When querying a ENGINE-specific control command's 'description', this

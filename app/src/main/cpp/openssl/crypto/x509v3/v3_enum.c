@@ -58,7 +58,7 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/x509v3.h"
 
 static ENUMERATED_NAMES crl_reasons[] = {

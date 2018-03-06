@@ -1,7 +1,7 @@
 /* crypto/evp/m_wp.c */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 
 #ifndef OPENSSL_NO_WHIRLPOOL
 
@@ -9,7 +9,7 @@
 #include "../../openssl/objects.h"
 #include "../../openssl/x509.h"
 #include "../../openssl/whrlpool.h"
-# include "evp_locl.h"
+# include "../openssl/evp_locl.h"
 
 static int init(EVP_MD_CTX *ctx)
 {

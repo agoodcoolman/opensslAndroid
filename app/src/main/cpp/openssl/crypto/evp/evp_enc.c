@@ -57,7 +57,7 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/evp.h"
 #include "../../openssl/err.h"
 #include "../../openssl/rand.h"
@@ -67,7 +67,7 @@
 #ifdef OPENSSL_FIPS
 #include "../../openssl/fips.h"
 #endif
-#include "evp_locl.h"
+# include "../openssl/evp_locl.h"
 
 #ifdef OPENSSL_FIPS
 # define M_do_cipher(ctx, out, in, inl) FIPS_cipher(ctx, out, in, inl)

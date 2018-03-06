@@ -60,8 +60,8 @@
 # include <string.h>
 # include <assert.h>
 #include "../../openssl/camellia.h"
-# include "evp_locl.h"
-# include "modes_lcl.h"
+# include "../openssl/evp_locl.h"
+# include "../openssl/modes_lcl.h"
 
 static int camellia_init_key(EVP_CIPHER_CTX *ctx, const unsigned char *key,
                              const unsigned char *iv, int enc);
@@ -84,7 +84,7 @@ typedef struct {
 # if defined(AES_ASM) && (defined(__sparc) || defined(__sparc__))
 /* ---------^^^ this is not a typo, just a way to detect that
  * assembler support was in general requested... */
-#  include "sparc_arch.h"
+# include "../openssl/sparc_arch.h"
 
 extern unsigned int OPENSSL_sparcv9cap_P[];
 

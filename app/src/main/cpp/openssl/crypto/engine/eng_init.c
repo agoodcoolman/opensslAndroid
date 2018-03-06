@@ -53,7 +53,7 @@
  *
  */
 
-#include "eng_int.h"
+# include "../openssl/eng_int.h"
 
 /*
  * Initialise a engine type for use (or up its functional reference count if

@@ -60,12 +60,12 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/stack.h"
 #include "../../openssl/lhash.h"
 #include "../../openssl/conf.h"
 #include "../../openssl/conf_api.h"
-#include "conf_def.h"
+# include "../openssl/conf_def.h"
 #include "../../openssl/buffer.h"
 #include "../../openssl/err.h"
 

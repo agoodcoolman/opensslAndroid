@@ -56,8 +56,8 @@
  * [including the GNU Public Licence.]
  */
 
-#include "des_locl.h"
-#include "e_os.h"
+# include "../openssl/des_locl.h"
+# include "../openssl/e_os.h"
 
 /*
  * The input and output encrypted as though 64bit cfb mode is being used.

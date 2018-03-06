@@ -70,7 +70,7 @@
 #include "../../openssl/fips.h"
 #endif
 
-#include "ec_lcl.h"
+# include "../openssl/ec_lcl.h"
 
 const EC_METHOD *EC_GFp_simple_method(void)
 {

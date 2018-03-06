@@ -56,8 +56,8 @@
  * [including the GNU Public Licence.]
  */
 
-#include "des_locl.h"
-#include "spr.h"
+# include "../openssl/des_locl.h"
+# include "../openssl/spr.h"
 
 void DES_encrypt1(DES_LONG *data, DES_key_schedule *ks, int enc)
 {

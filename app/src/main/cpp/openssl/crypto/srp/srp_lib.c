@@ -58,8 +58,8 @@
  *
  */
 #ifndef OPENSSL_NO_SRP
-# include "cryptlib.h"
-# include "srp_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/srp_lcl.h"
 #include "../../openssl/srp.h"
 #include "../../openssl/evp.h"
 
@@ -77,7 +77,7 @@
 #  error "unsupported BN_BYTES"
 # endif
 
-# include "srp_grps.h"
+# include "../openssl/srp_grps.h"
 
 static BIGNUM *srp_Calc_k(BIGNUM *N, BIGNUM *g)
 {

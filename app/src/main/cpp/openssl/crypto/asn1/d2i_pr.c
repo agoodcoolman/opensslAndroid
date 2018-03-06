@@ -57,7 +57,7 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/bn.h"
 #include "../../openssl/evp.h"
 #include "../../openssl/objects.h"
@@ -66,7 +66,7 @@
 #endif
 #include "../../openssl/x509.h"
 #include "../../openssl/asn1.h"
-#include "asn1_locl.h"
+# include "../openssl/asn1_locl.h"
 
 EVP_PKEY *d2i_PrivateKey(int type, EVP_PKEY **a, const unsigned char **pp,
                          long length)

@@ -56,7 +56,7 @@
  * [including the GNU Public Licence.]
  */
 
-#include "des_locl.h"
+# include "../openssl/des_locl.h"
 
 /*
  * The input and output are loaded in multiples of 8 bits. What this means is

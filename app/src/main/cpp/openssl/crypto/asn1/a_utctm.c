@@ -58,10 +58,10 @@
 
 #include <stdio.h>
 #include <time.h>
-#include "cryptlib.h"
-#include "o_time.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/o_time.h"
 #include "../../openssl/asn1.h"
-#include "asn1_locl.h"
+# include "../openssl/asn1_locl.h"
 
 #if 0
 int i2d_ASN1_UTCTIME(ASN1_UTCTIME *a, unsigned char **pp)

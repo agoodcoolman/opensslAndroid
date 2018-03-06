@@ -58,7 +58,7 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/asn1t.h"
 #include "../../openssl/x509.h"
 #include "../../openssl/rsa.h"
@@ -71,8 +71,8 @@
 #ifdef OPENSSL_FIPS
 #include "../../openssl/fips.h"
 #endif
-#include "evp_locl.h"
-#include "rsa_locl.h"
+# include "../openssl/evp_locl.h"
+# include "../openssl/rsa_locl.h"
 
 /* RSA pkey context structure */
 

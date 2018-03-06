@@ -59,11 +59,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/objects.h"
 #include "../../openssl/evp.h"
 #include "../../openssl/bn.h"
-#include "evp_locl.h"
+# include "../openssl/evp_locl.h"
 
 int EVP_PKEY_paramgen_init(EVP_PKEY_CTX *ctx)
 {

@@ -65,7 +65,7 @@
 
 #include "../../openssl/err.h"
 
-#include "ec_lcl.h"
+# include "../openssl/ec_lcl.h"
 
 /*
  * This file implements the wNAF-based interleaving multi-exponentiation method

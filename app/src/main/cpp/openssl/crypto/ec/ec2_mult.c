@@ -69,7 +69,7 @@
 
 #include "../../openssl/err.h"
 
-#include "ec_lcl.h"
+# include "../openssl/ec_lcl.h"
 
 #ifndef OPENSSL_NO_EC2M
 

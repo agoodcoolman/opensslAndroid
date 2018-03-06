@@ -63,7 +63,7 @@
 #include "../../openssl/err.h"
 #include "../../openssl/asn1t.h"
 #include <string.h>
-#include "asn1_int.h"
+# include "../openssl/asn1_int.h"
 
 static int asn1_item_ex_combine_new(ASN1_VALUE **pval, const ASN1_ITEM *it,
                                     int combine);

@@ -57,7 +57,7 @@
  */
 
 #include "../../openssl/cast.h"
-#include "cast_lcl.h"
+# include "../openssl/cast_lcl.h"
 
 void CAST_encrypt(CAST_LONG *data, const CAST_KEY *key)
 {

@@ -111,8 +111,8 @@
 
 #include <stdio.h>
 #include <time.h>
-#include "cryptlib.h"
-#include "bn_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/bn_lcl.h"
 #include "../../openssl/rand.h"
 
 /*
@@ -126,7 +126,7 @@
  * Zimmermann's, as implemented in PGP.  I have had a read of his comments
  * and implemented my own version.
  */
-#include "bn_prime.h"
+# include "../openssl/bn_prime.h"
 
 static int witness(BIGNUM *w, const BIGNUM *a, const BIGNUM *a1,
                    const BIGNUM *a1_odd, int k, BN_CTX *ctx,

@@ -1,4 +1,4 @@
-#include "jpake.h"
+# include "../openssl/jpake.h"
 
 #include "../../openssl/crypto.h"
 #include "../../openssl/sha.h"

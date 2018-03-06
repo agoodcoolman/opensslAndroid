@@ -57,7 +57,7 @@
  */
 
 #include "../../openssl/blowfish.h"
-#include "bf_locl.h"
+# include "../openssl/bf_locl.h"
 
 void BF_cbc_encrypt(const unsigned char *in, unsigned char *out, long length,
                     const BF_KEY *schedule, unsigned char *ivec, int encrypt)

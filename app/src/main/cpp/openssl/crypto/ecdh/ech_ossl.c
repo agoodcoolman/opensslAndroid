@@ -70,9 +70,9 @@
 #include <string.h>
 #include <limits.h>
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 
-#include "ech_locl.h"
+# include "../openssl/ech_locl.h"
 #include "../../openssl/err.h"
 #include "../../openssl/sha.h"
 #include "../../openssl/obj_mac.h"

@@ -61,7 +61,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-#include "e_os.h"
+# include "../openssl/e_os.h"
 #include "../../openssl/asn1.h"
 #include "../../openssl/ocsp.h"
 #include "../../openssl/err.h"

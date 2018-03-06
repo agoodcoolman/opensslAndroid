@@ -56,10 +56,10 @@
  * [including the GNU Public Licence.]
  */
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 
 #ifndef NO_WINDOWS_BRAINDEATH
-# include "buildinf.h"
+# include "../openssl/buildinf.h"
 #endif
 
 const char *SSLeay_version(int t)

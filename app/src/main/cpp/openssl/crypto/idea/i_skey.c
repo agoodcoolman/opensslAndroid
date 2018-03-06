@@ -58,7 +58,7 @@
 
 #include "../../openssl/crypto.h"
 #include "../../openssl/idea.h"
-#include "idea_lcl.h"
+# include "../openssl/idea_lcl.h"
 
 static IDEA_INT inverse(unsigned int xin);
 void idea_set_encrypt_key(const unsigned char *key, IDEA_KEY_SCHEDULE *ks)

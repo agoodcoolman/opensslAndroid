@@ -50,7 +50,7 @@
 #include "../../openssl/evp.h"
 #include "../../openssl/objects.h"
 #include "../../openssl/rsa.h"
-#include "evp_locl.h"
+# include "../openssl/evp_locl.h"
 
 /*
  * This stuff should now all be supported through

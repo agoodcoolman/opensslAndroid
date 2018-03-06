@@ -59,8 +59,8 @@
 #include "../../openssl/aes.h"
 #include "../../openssl/sha.h"
 #include "../../openssl/rand.h"
-# include "modes_lcl.h"
-# include "constant_time_locl.h"
+# include "../openssl/modes_lcl.h"
+# include "../openssl/constant_time_locl.h"
 
 # ifndef EVP_CIPH_FLAG_AEAD_CIPHER
 #  define EVP_CIPH_FLAG_AEAD_CIPHER       0x200000

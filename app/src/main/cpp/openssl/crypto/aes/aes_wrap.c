@@ -52,7 +52,7 @@
  * ====================================================================
  */
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../openssl/aes.h"
 #include "../openssl/modes.h"
 

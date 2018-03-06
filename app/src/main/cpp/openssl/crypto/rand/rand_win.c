@@ -109,9 +109,9 @@
  *
  */
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/rand.h"
-#include "rand_lcl.h"
+# include "../openssl/rand_lcl.h"
 
 #if defined(OPENSSL_SYS_WINDOWS) || defined(OPENSSL_SYS_WIN32)
 # include <windows.h>

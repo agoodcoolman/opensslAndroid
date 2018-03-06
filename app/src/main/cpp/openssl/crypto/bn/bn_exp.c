@@ -109,9 +109,9 @@
  *
  */
 
-#include "cryptlib.h"
-#include "constant_time_locl.h"
-#include "bn_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/constant_time_locl.h"
+# include "../openssl/bn_lcl.h"
 
 #include <stdlib.h>
 #ifdef _WIN32
@@ -127,11 +127,11 @@
 # include <alloca.h>
 #endif
 
-#include "rsaz_exp.h"
+# include "../openssl/rsaz_exp.h"
 
 #undef SPARC_T4_MONT
 #if defined(OPENSSL_BN_ASM_MONT) && (defined(__sparc__) || defined(__sparc))
-# include "sparc_arch.h"
+# include "../openssl/sparc_arch.h"
 extern unsigned int OPENSSL_sparcv9cap_P[];
 # define SPARC_T4_MONT
 #endif

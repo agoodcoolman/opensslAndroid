@@ -57,7 +57,7 @@
  */
 
 #include "../../openssl/idea.h"
-#include "idea_lcl.h"
+# include "../openssl/idea_lcl.h"
 
 void idea_cbc_encrypt(const unsigned char *in, unsigned char *out,
                       long length, IDEA_KEY_SCHEDULE *ks, unsigned char *iv,

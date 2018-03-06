@@ -57,7 +57,7 @@
  *
  */
 
-#include "pqueue.h"
+# include "../openssl/pqueue.h"
 
 int main(void)
 {

@@ -57,8 +57,8 @@
  *
  */
 
-#include "cryptlib.h"
-#include "eng_int.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/eng_int.h"
 
 void ENGINE_load_builtin_engines(void)
 {

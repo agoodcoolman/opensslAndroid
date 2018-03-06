@@ -65,7 +65,7 @@
  */
 
 #define DES_FCRYPT
-#include "des_locl.h"
+# include "../openssl/des_locl.h"
 #undef DES_FCRYPT
 
 #undef PERM_OP

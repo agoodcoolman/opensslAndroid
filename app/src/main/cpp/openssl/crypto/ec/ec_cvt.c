@@ -70,7 +70,7 @@
  */
 
 #include "../../openssl/err.h"
-#include "ec_lcl.h"
+# include "../openssl/ec_lcl.h"
 
 #ifdef OPENSSL_FIPS
 #include "../../openssl/fips.h"

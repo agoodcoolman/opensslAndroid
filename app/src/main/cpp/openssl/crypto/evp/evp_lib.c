@@ -57,12 +57,12 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/evp.h"
 #include "../../openssl/objects.h"
 #ifdef OPENSSL_FIPS
 #include "../../openssl/fips.h"
-# include "evp_locl.h"
+# include "../openssl/evp_locl.h"
 #endif
 
 int EVP_CIPHER_param_to_asn1(EVP_CIPHER_CTX *c, ASN1_TYPE *type)

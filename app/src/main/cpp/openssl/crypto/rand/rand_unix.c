@@ -111,10 +111,10 @@
 #include <stdio.h>
 
 #define USE_SOCKETS
-#include "e_os.h"
-#include "cryptlib.h"
+# include "../openssl/e_os.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/rand.h"
-#include "rand_lcl.h"
+# include "../openssl/rand_lcl.h"
 
 #if !(defined(OPENSSL_SYS_WINDOWS) || defined(OPENSSL_SYS_WIN32) || defined(OPENSSL_SYS_VMS) || defined(OPENSSL_SYS_OS2) || defined(OPENSSL_SYS_VXWORKS) || defined(OPENSSL_SYS_NETWARE))
 

@@ -52,7 +52,7 @@
  *
  */
 
-#include "eng_int.h"
+# include "../openssl/eng_int.h"
 
 /*
  * If this symbol is defined then ENGINE_get_digest_engine(), the function

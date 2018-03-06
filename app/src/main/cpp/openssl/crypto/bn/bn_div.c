@@ -58,8 +58,8 @@
 
 #include <stdio.h>
 #include "../../openssl/bn.h"
-#include "cryptlib.h"
-#include "bn_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/bn_lcl.h"
 
 /* The old slow way */
 #if 0

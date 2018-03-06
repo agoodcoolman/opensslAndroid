@@ -57,7 +57,7 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 
 #ifndef OPENSSL_NO_RIPEMD
 
@@ -68,7 +68,7 @@
 # ifndef OPENSSL_NO_RSA
 #include "../../openssl/rsa.h"
 # endif
-# include "evp_locl.h"
+# include "../openssl/evp_locl.h"
 
 static int init(EVP_MD_CTX *ctx)
 {

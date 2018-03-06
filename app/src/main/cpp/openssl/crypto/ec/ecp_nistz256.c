@@ -31,9 +31,9 @@
 #include "../../openssl/bn.h"
 #include "../../openssl/err.h"
 #include "../../openssl/ec.h"
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 
-#include "ec_lcl.h"
+# include "../openssl/ec_lcl.h"
 
 #if BN_BITS2 != 64
 # define TOBN(hi,lo)    lo,hi

@@ -57,7 +57,7 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/evp.h"
 #ifndef OPENSSL_NO_ENGINE
 #include "../../openssl/engine.h"

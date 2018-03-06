@@ -60,8 +60,8 @@
 
 #include <stdio.h>
 #include <time.h>
-#include "cryptlib.h"
-#include "bn_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/bn_lcl.h"
 #include "../../openssl/rand.h"
 
 static void *dummy = &dummy;

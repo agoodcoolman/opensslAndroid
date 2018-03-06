@@ -3,9 +3,9 @@
 #include <string.h>
 #include <setjmp.h>
 #include <signal.h>
-#include "crypto.h"
+# include "../openssl/crypto.h"
 
-#include "arm_arch.h"
+# include "../openssl/arm_arch.h"
 
 unsigned int OPENSSL_armcap_P = 0;
 

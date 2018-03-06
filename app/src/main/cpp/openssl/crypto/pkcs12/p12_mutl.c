@@ -59,7 +59,7 @@
 
 #ifndef OPENSSL_NO_HMAC
 # include <stdio.h>
-# include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/crypto.h"
 #include "../../openssl/hmac.h"
 #include "../../openssl/rand.h"

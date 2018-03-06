@@ -58,8 +58,8 @@
 
 #include "../../openssl/crypto.h"
 #include "../../openssl/cast.h"
-#include "cast_lcl.h"
-#include "cast_s.h"
+# include "../openssl/cast_lcl.h"
+# include "../openssl/cast_s.h"
 
 #define CAST_exp(l,A,a,n) \
         A[n/4]=l; \

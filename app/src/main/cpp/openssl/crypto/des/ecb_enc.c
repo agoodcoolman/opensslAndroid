@@ -56,8 +56,8 @@
  * [including the GNU Public Licence.]
  */
 
-#include "des_locl.h"
-#include "des_ver.h"
+# include "../openssl/des_locl.h"
+# include "../openssl/des_ver.h"
 #include "../../openssl/opensslv.h"
 #include "../../openssl/bio.h"
 

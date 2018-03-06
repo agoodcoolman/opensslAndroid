@@ -111,8 +111,8 @@
 
 #include <stdio.h>
 #include <time.h>
-#include "cryptlib.h"
-#include "bn_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/bn_lcl.h"
 #include "../../openssl/rand.h"
 
 static int bnrand(int pseudorand, BIGNUM *rnd, int bits, int top, int bottom)

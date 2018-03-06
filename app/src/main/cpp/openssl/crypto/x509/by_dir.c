@@ -60,7 +60,7 @@
 #include <time.h>
 #include <errno.h>
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 
 #ifndef NO_SYS_TYPES_H
 # include <sys/types.h>

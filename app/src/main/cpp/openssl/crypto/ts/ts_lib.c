@@ -58,11 +58,11 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/objects.h"
 #include "../../openssl/bn.h"
 #include "../../openssl/x509v3.h"
-#include "ts.h"
+# include "../openssl/ts.h"
 
 /* Local function declarations. */
 

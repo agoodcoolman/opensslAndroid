@@ -57,7 +57,7 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/x509.h"
 #include "../../openssl/objects.h"
 #include "../../openssl/evp.h"

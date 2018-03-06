@@ -63,7 +63,7 @@
  */
 
 #include "../../openssl/rand.h"
-#include "rand_lcl.h"
+# include "../openssl/rand_lcl.h"
 
 #if defined(OPENSSL_SYS_VMS)
 # include <descrip.h>

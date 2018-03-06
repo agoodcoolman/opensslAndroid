@@ -82,8 +82,8 @@
  * words reasonable performance even with not so modern compilers.
  */
 
-#include "camellia.h"
-#include "cmll_locl.h"
+# include "../openssl/camellia.h"
+# include "../openssl/cmll_locl.h"
 #include <string.h>
 #include <stdlib.h>
 

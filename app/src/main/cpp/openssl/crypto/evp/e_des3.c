@@ -57,11 +57,11 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #ifndef OPENSSL_NO_DES
 #include "../../openssl/evp.h"
 #include "../../openssl/objects.h"
-# include "evp_locl.h"
+# include "../openssl/evp_locl.h"
 #include "../../openssl/des.h"
 #include "../../openssl/rand.h"
 
@@ -86,7 +86,7 @@ typedef struct {
 # if defined(AES_ASM) && (defined(__sparc) || defined(__sparc__))
 /* ---------^^^ this is not a typo, just a way to detect that
  * assembler support was in general requested... */
-#  include "sparc_arch.h"
+# include "../openssl/sparc_arch.h"
 
 extern unsigned int OPENSSL_sparcv9cap_P[];
 

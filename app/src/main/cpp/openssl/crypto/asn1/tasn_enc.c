@@ -60,7 +60,7 @@
 #include <stddef.h>
 #include <string.h>
 #include <limits.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/asn1.h"
 #include "../../openssl/asn1t.h"
 #include "../../openssl/objects.h"

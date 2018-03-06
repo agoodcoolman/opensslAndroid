@@ -57,11 +57,11 @@
  *
  */
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/x509.h"
 #include "../../openssl/x509v3.h"
 
-#include "pcy_int.h"
+# include "../openssl/pcy_int.h"
 
 static int policy_data_cmp(const X509_POLICY_DATA *const *a,
                            const X509_POLICY_DATA *const *b);

@@ -63,7 +63,7 @@
  * If you wish to build this outside of SSLeay, remove the following lines
  * and things should work as expected
  */
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 
 #ifndef OPENSSL_NO_BIO
 #include "../../openssl/bio.h"

@@ -58,8 +58,8 @@
 #include "../../openssl/pem.h"
 #include "../../openssl/bio.h"
 #include "../../openssl/asn1.h"
-#include "cms.h"
-#include "cms_lcl.h"
+# include "../openssl/cms.h"
+# include "../openssl/cms_lcl.h"
 
 IMPLEMENT_ASN1_FUNCTIONS(CMS_ContentInfo)
 IMPLEMENT_ASN1_PRINT_FUNCTION(CMS_ContentInfo)

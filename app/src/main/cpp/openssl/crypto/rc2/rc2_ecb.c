@@ -57,7 +57,7 @@
  */
 
 #include "../../openssl/rc2.h"
-#include "rc2_locl.h"
+# include "../openssl/rc2_locl.h"
 #include "../../openssl/opensslv.h"
 
 const char RC2_version[] = "RC2" OPENSSL_VERSION_PTEXT;

@@ -57,7 +57,7 @@
  */
 
 #include <stdio.h>
-#include "md5_locl.h"
+# include "../openssl/md5_locl.h"
 #include "../../openssl/opensslv.h"
 #include "../../openssl/crypto.h"
 

@@ -57,13 +57,13 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/asn1t.h"
 #include "../../openssl/x509.h"
 #include "../../openssl/evp.h"
 #include "../../openssl/bn.h"
-#include "evp_locl.h"
-#include "dsa_locl.h"
+# include "../openssl/evp_locl.h"
+# include "../openssl/dsa_locl.h"
 
 /* DSA pkey context structure */
 

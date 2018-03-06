@@ -52,7 +52,7 @@
  * ====================================================================
  */
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/asn1t.h"
 #include "../../openssl/pem.h"
 #include "../../openssl/x509v3.h"
@@ -60,8 +60,8 @@
 #include "../../openssl/cms.h"
 #include "../../openssl/rand.h"
 #include "../../openssl/aes.h"
-#include "cms_lcl.h"
-#include "asn1_locl.h"
+# include "../openssl/cms_lcl.h"
+# include "../openssl/asn1_locl.h"
 
 DECLARE_ASN1_ITEM(CMS_KeyAgreeRecipientInfo)
 DECLARE_ASN1_ITEM(CMS_RecipientEncryptedKey)

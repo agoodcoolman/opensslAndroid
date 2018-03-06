@@ -52,7 +52,7 @@
  */
 
 #include "../../openssl/crypto.h"
-#include "wp_locl.h"
+# include "../openssl/wp_locl.h"
 #include "../../openssl/crypto.h"
 #include <string.h>
 

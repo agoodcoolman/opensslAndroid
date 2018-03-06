@@ -60,7 +60,7 @@
 /* Simple PKCS#7 processing functions */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/x509.h"
 #include "../../openssl/x509v3.h"
 

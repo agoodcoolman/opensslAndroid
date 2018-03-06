@@ -57,12 +57,12 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/x509.h"
 #include "../../openssl/asn1.h"
 #include "../../openssl/dh.h"
 #include "../../openssl/bn.h"
-#include "asn1_locl.h"
+# include "../openssl/asn1_locl.h"
 #ifndef OPENSSL_NO_CMS
 #include "../../openssl/cms.h"
 #endif

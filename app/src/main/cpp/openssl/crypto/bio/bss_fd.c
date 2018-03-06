@@ -59,7 +59,7 @@
 #include <stdio.h>
 #include <errno.h>
 #define USE_SOCKETS
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 
 #if defined(OPENSSL_NO_POSIX_IO)
 /*
@@ -97,7 +97,7 @@ BIO_METHOD *BIO_s_fd(void)
  * file descriptors can only be provided by application. Therefore
  * "UPLINK" calls are due...
  */
-# include "bio_lcl.h"
+# include "../openssl/bio_lcl.h"
 
 static int fd_write(BIO *h, const char *buf, int num);
 static int fd_read(BIO *h, char *buf, int size);

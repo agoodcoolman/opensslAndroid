@@ -56,8 +56,8 @@
 #include "../../openssl/x509.h"
 #include "../../openssl/err.h"
 #include "../../openssl/pem.h"
-#include "cms.h"
-#include "cms_lcl.h"
+# include "../openssl/cms.h"
+# include "../openssl/cms_lcl.h"
 
 int CMS_stream(unsigned char ***boundary, CMS_ContentInfo *cms)
 {

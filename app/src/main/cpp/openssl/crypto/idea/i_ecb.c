@@ -57,7 +57,7 @@
  */
 
 #include "../../openssl/idea.h"
-#include "idea_lcl.h"
+# include "../openssl/idea_lcl.h"
 #include "../../openssl/opensslv.h"
 
 const char IDEA_version[] = "IDEA" OPENSSL_VERSION_PTEXT;

@@ -26,7 +26,7 @@
  */
 
 # include <stddef.h>
-# include "ec_lcl.h"
+# include "../openssl/ec_lcl.h"
 
 /*
  * Convert an array of points into affine coordinates. (If the point at

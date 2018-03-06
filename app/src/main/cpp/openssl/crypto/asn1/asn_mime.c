@@ -55,12 +55,12 @@
 
 #include <stdio.h>
 #include <ctype.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/rand.h"
 #include "../../openssl/x509.h"
 #include "../../openssl/asn1.h"
 #include "../../openssl/asn1t.h"
-#include "asn1_locl.h"
+# include "../openssl/asn1_locl.h"
 
 /*
  * Generalised MIME like utilities for streaming ASN1. Although many have a

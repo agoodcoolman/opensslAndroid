@@ -67,7 +67,7 @@
  *
  */
 
-#include "ech_locl.h"
+# include "../openssl/ech_locl.h"
 
 int ECDH_compute_key(void *out, size_t outlen, const EC_POINT *pub_key,
                      EC_KEY *eckey,

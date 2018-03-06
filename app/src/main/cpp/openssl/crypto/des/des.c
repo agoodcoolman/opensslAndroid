@@ -75,7 +75,7 @@
 #endif
 
 #include <time.h>
-#include "des_ver.h"
+# include "../openssl/des_ver.h"
 
 #ifdef OPENSSL_SYS_VMS
 # include <types.h>

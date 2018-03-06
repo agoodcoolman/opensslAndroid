@@ -60,7 +60,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/dso.h"
 
 #ifndef OPENSSL_SYS_VMS
@@ -76,7 +76,7 @@ DSO_METHOD *DSO_METHOD_vms(void)
 # include <stsdef.h>
 # include <descrip.h>
 # include <starlet.h>
-# include "vms_rms.h"
+# include "../openssl/vms_rms.h"
 
 /* Some compiler options may mask the declaration of "_malloc32". */
 # if __INITIAL_POINTER_SIZE && defined _ANSI_C_SOURCE

@@ -57,7 +57,7 @@
  *
  */
 
-#include "eng_int.h"
+# include "../openssl/eng_int.h"
 #include "../../openssl/dso.h"
 
 /*

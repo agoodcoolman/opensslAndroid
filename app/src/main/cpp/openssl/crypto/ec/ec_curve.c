@@ -70,7 +70,7 @@
  */
 
 #include <string.h>
-#include "ec_lcl.h"
+# include "../openssl/ec_lcl.h"
 #include "../../openssl/err.h"
 #include "../../openssl/obj_mac.h"
 #include "../../openssl/opensslconf.h"

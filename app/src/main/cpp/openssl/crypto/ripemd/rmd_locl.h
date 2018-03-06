@@ -96,7 +96,7 @@ void ripemd160_block_data_order(RIPEMD160_CTX *c, const void *p, size_t num);
         } while (0)
 #define HASH_BLOCK_DATA_ORDER   ripemd160_block_data_order
 
-#include "md32_common.h"
+# include "../openssl/md32_common.h"
 
 #if 0
 # define F1(x,y,z)        ((x)^(y)^(z))
@@ -121,7 +121,7 @@ void ripemd160_block_data_order(RIPEMD160_CTX *c, const void *p, size_t num);
 #define RIPEMD160_D     0x10325476L
 #define RIPEMD160_E     0xC3D2E1F0L
 
-#include "rmdconst.h"
+# include "../openssl/rmdconst.h"
 
 #define RIP1(a,b,c,d,e,w,s) { \
         a+=F1(b,c,d)+X(w); \

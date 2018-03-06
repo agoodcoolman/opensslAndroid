@@ -57,7 +57,7 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/asn1t.h"
 #include "../../openssl/x509.h"
 #include "../../openssl/evp.h"
@@ -67,7 +67,7 @@
 #include "../../openssl/dsa.h"
 #endif
 #include "../../openssl/objects.h"
-#include "evp_locl.h"
+# include "../openssl/evp_locl.h"
 
 /* DH pkey context structure */
 

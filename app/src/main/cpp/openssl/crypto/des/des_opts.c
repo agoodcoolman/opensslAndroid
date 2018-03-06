@@ -107,7 +107,7 @@ extern void exit();
 #endif
 
 #include "../../openssl/des.h"
-#include "spr.h"
+# include "../openssl/spr.h"
 
 #define DES_DEFAULT_OPTIONS
 

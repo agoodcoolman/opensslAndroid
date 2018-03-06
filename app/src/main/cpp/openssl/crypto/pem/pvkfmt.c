@@ -61,7 +61,7 @@
  * and PRIVATEKEYBLOB).
  */
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/pem.h"
 #include "../../openssl/rand.h"
 #include "../../openssl/bn.h"

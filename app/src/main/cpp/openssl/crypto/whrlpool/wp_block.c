@@ -35,7 +35,7 @@
  *
  */
 
-#include "wp_locl.h"
+# include "../openssl/wp_locl.h"
 #include <string.h>
 
 typedef unsigned char u8;

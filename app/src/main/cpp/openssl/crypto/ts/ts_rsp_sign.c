@@ -57,7 +57,7 @@
  *
  */
 
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 
 #if defined(OPENSSL_SYS_UNIX)
 # include <sys/time.h>

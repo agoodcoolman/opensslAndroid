@@ -52,10 +52,10 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/evp.h"
 #include "../../openssl/cmac.h"
-#include "asn1_locl.h"
+# include "../openssl/asn1_locl.h"
 
 /*
  * CMAC "ASN1" method. This is just here to indicate the maximum CMAC output

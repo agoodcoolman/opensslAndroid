@@ -59,7 +59,7 @@
 #include <stdio.h>
 #include "../../openssl/opensslv.h"
 #include "../../openssl/crypto.h"
-#include "md4_locl.h"
+# include "../openssl/md4_locl.h"
 
 const char MD4_version[] = "MD4" OPENSSL_VERSION_PTEXT;
 

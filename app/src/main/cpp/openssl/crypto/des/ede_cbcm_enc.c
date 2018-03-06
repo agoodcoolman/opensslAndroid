@@ -72,7 +72,7 @@
 #include "../../openssl/opensslconf.h" /* To see if OPENSSL_NO_DESCBCM is defined */
 
 #ifndef OPENSSL_NO_DESCBCM
-# include "des_locl.h"
+# include "../openssl/des_locl.h"
 
 void DES_ede3_cbcm_encrypt(const unsigned char *in, unsigned char *out,
                            long length, DES_key_schedule *ks1,

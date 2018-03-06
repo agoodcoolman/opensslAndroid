@@ -64,8 +64,8 @@
 #include <assert.h>
 #include <limits.h>
 #include <stdio.h>
-#include "cryptlib.h"
-#include "bn_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/bn_lcl.h"
 
 const char BN_version[] = "Big Number" OPENSSL_VERSION_PTEXT;
 

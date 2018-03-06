@@ -109,8 +109,8 @@
  *
  */
 
-#include "cryptlib.h"
-#include "bn_lcl.h"
+# include "../openssl/cryptlib.h"
+# include "../openssl/bn_lcl.h"
 
 static BIGNUM *euclid(BIGNUM *a, BIGNUM *b);
 

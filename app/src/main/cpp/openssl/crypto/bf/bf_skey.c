@@ -60,8 +60,8 @@
 #include <string.h>
 #include "../../openssl/crypto.h"
 #include "../../openssl/blowfish.h"
-#include "bf_locl.h"
-#include "bf_pi.h"
+# include "../openssl/bf_locl.h"
+# include "../openssl/bf_pi.h"
 
 void BF_set_key(BF_KEY *key, int len, const unsigned char *data)
 #ifdef OPENSSL_FIPS

@@ -58,7 +58,7 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/asn1t.h"
 #include "../../openssl/x509.h"
 #include "../../openssl/rsa.h"
@@ -66,7 +66,7 @@
 #ifndef OPENSSL_NO_CMS
 #include "../../openssl/cms.h"
 #endif
-#include "asn1_locl.h"
+# include "../openssl/asn1_locl.h"
 
 #ifndef OPENSSL_NO_CMS
 static int rsa_cms_sign(CMS_SignerInfo *si);

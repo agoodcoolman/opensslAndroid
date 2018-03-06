@@ -59,11 +59,11 @@
 /* X509 v3 extension utilities */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/conf.h"
 #include "../../openssl/x509v3.h"
 
-#include "ext_dat.h"
+# include "../openssl/ext_dat.h"
 
 static STACK_OF(X509V3_EXT_METHOD) *ext_list = NULL;
 

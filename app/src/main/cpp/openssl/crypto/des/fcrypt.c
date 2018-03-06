@@ -22,7 +22,7 @@
  * changed. I have defined 24.
  */
 
-#include "des_locl.h"
+# include "../openssl/des_locl.h"
 
 /*
  * Added more values to handle illegal salt values the way normal crypt()

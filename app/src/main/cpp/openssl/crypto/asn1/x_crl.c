@@ -57,9 +57,9 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+# include "../openssl/cryptlib.h"
 #include "../../openssl/asn1t.h"
-#include "asn1_locl.h"
+# include "../openssl/asn1_locl.h"
 #include "../../openssl/x509.h"
 #include "../../openssl/x509v3.h"
 
