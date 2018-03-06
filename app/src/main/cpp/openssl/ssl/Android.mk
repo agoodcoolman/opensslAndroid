@@ -57,14 +57,11 @@ LOCAL_SRC_FILES := bio_ssl.c \
 
 
 local_c_include :=  $(NDK_PATH)/openssl/openssl \
-                    $(NDK_PATH)/openssl/internal \
-                    $(NDK_PATH)/openssl/crypto/asn1 \
-                    $(NDK_PATH)/openssl/crypto/evp \
 
 include $(CLEAR_VARS)
 include $(NDK_PATH)/android-config.mk
-LOCAL_SRC_FILES += $(local_src_files)
-LOCAL_C_INCLUDES += $(local_c_includes)
+#LOCAL_SRC_FILES += $(local_src_files)
+LOCAL_C_INCLUDES += $(local_c_include)
 LOCAL_SHARED_LIBRARIES += libcrypto
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE:= libssl

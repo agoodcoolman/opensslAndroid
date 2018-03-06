@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 arm_cflags := -DOPENSSL_BN_ASM_MONT -DAES_ASM -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM
-#LOCAL_SHORT_COMMANDS := true
+LOCAL_SHORT_COMMANDS := true
 
 local_src_files := cversion.c  \
                    mem.c  \
